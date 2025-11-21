@@ -4,7 +4,7 @@ title = "Ethan's Site"
 
 DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 
- copyright = "Ethan Li"
+copyright = "Ethan"
 theme = "diary"
 # paginate: 10
 
@@ -28,7 +28,7 @@ theme = "diary"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "github"
+    style = "solarized-light"
     tabWidth = 4
 
 [params]
@@ -41,6 +41,7 @@ mainSections = ["posts"]
 # subtitle = "2"
 enableGitalk = false
 enableGiscus = true
+disableDarkMode=true
 
 # Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
 clarity = "abcdefghzd"

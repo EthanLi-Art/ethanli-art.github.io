@@ -9,11 +9,14 @@
 - id: prev_link
   translation: 'Previou'
 - id: no_newer_posts
-  translation: 已经到头啦。
+  # translation: 已经到头啦。
+  translation: ''
 - id: no_older_posts
-  translation: 这是最旧的文章了。
+  # translation: 这是最旧的文章了。
+  translation: ''
 - id: comments_disabled
-  translation: 此篇文章的评论功能已经停用。
+  # translation: 此篇文章的评论功能已经停用。
+  translation: ''
 - id: comments_activate_js
   translation: 请开启 JavaScript 以便使用评论服务。
 - id: hugo_theme
@@ -25,4 +28,5 @@
 - id: draft
   translation: Draft
 - id: toc_title
-  translation: 目录
+  # translation: 目录
+  translation: Contents
