@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Todo on Ethan&#39;s Site</title>
-    <link>http://localhost:1313/tags/todo/</link>
+    <link>https://ethanli-art.github.io/tags/todo/</link>
     <description>Recent content in Todo on Ethan&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>Ethan&#39;s Site（2016 - 2026）</copyright>
-    <lastBuildDate>Thu, 20 Nov 2025 12:00:49 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/todo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test Agan</title>
-      <link>http://localhost:1313/posts/2025/test-agan/</link>
-      <pubDate>Thu, 20 Nov 2025 12:00:49 -0500</pubDate>
-      <guid>http://localhost:1313/posts/2025/test-agan/</guid>
-      <description>&lt;br/&gt;&#xA;# 概述&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;## H2&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;br/&gt;&#xA;&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;</description>
-    </item>
+    <copyright>Ethan Li</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 02:01:58 +0530</lastBuildDate>
+    <atom:link href="https://ethanli-art.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(No comment) When You Have Too Much to Do</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>https://ethanli-art.github.io/posts/post-1/</link>
       <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>https://ethanli-art.github.io/posts/post-1/</guid>
       <description>&lt;p&gt;You have a to-do list that scrolls on for days. You are managing multiple projects, getting lots of email and messages on different messaging systems, managing finances and personal health habits and so much more.&lt;/p&gt;&#xA;&lt;p&gt;It all keeps piling up, and it can feel overwhelming.&lt;/p&gt;&#xA;&lt;p&gt;How do you keep up with it all? How do you find focus and peace and get stuff accomplished when you have too much on your plate?&lt;/p&gt;</description>
     </item>
   </channel>

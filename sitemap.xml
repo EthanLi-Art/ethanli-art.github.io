@@ -2,132 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://ethanli-art.github.io/</loc>
     <lastmod>2025-11-20T12:00:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://ethanli-art.github.io/posts/</loc>
     <lastmod>2025-11-20T12:00:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/primer/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/test-agan/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/todo/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/todo/</loc>
-    <lastmod>2025-11-20T12:00:49-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025/my-first-post/</loc>
+    <loc>https://ethanli-art.github.io/posts/2025/my-first-post/</loc>
     <lastmod>2025-11-20T11:43:51-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/linux/</loc>
+    <loc>https://ethanli-art.github.io/categories/</loc>
     <lastmod>2025-11-20T09:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://ethanli-art.github.io/categories/linux/</loc>
     <lastmod>2025-11-20T09:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/network/</loc>
+    <loc>https://ethanli-art.github.io/tags/linux/</loc>
     <lastmod>2025-11-20T09:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/2025/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%9B%BA%E5%AE%9Aip/</loc>
+    <loc>https://ethanli-art.github.io/tags/network/</loc>
     <lastmod>2025-11-20T09:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
-    <lastmod>2025-11-19T22:28:04-05:00</lastmod>
+    <loc>https://ethanli-art.github.io/tags/</loc>
+    <lastmod>2025-11-20T09:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/chinese/</loc>
+    <loc>https://ethanli-art.github.io/posts/2025/virtualbox%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%9B%BA%E5%AE%9Aip/</loc>
+    <lastmod>2025-11-20T09:32:25-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ethanli-art.github.io/categories/chinese/</loc>
     <lastmod>2019-11-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/chinese/</loc>
+    <loc>https://ethanli-art.github.io/tags/chinese/</loc>
     <lastmod>2019-11-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/text/</loc>
+    <loc>https://ethanli-art.github.io/tags/text/</loc>
     <lastmod>2019-11-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/chinese/</loc>
+    <loc>https://ethanli-art.github.io/posts/chinese/</loc>
     <lastmod>2019-11-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/typography/</loc>
+    <loc>https://ethanli-art.github.io/tags/typography/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/post-5/</loc>
+    <loc>https://ethanli-art.github.io/posts/post-5/</loc>
     <lastmod>2018-03-18T12:13:38+05:30</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/post-1/</loc>
+    <loc>https://ethanli-art.github.io/posts/post-1/</loc>
     <lastmod>2018-03-18T02:01:58+05:30</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/chapter-6/</loc>
+    <loc>https://ethanli-art.github.io/tags/primer/</loc>
+    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ethanli-art.github.io/categories/todo/</loc>
+    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ethanli-art.github.io/tags/todo/</loc>
+    <lastmod>2018-03-18T02:01:58+05:30</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://ethanli-art.github.io/posts/chapter-6/</loc>
     <lastmod>2017-04-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/story/</loc>
+    <loc>https://ethanli-art.github.io/categories/story/</loc>
     <lastmod>2017-04-14T11:25:05-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/chapter-1/</loc>
+    <loc>https://ethanli-art.github.io/posts/chapter-1/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/scene/</loc>
+    <loc>https://ethanli-art.github.io/tags/scene/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://ethanli-art.github.io/about/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

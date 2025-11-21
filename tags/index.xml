@@ -2,67 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ethan&#39;s Site</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://ethanli-art.github.io/tags/</link>
     <description>Recent content in Tags on Ethan&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>Ethan&#39;s Site（2016 - 2026）</copyright>
-    <lastBuildDate>Thu, 20 Nov 2025 12:00:49 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Primer</title>
-      <link>http://localhost:1313/tags/primer/</link>
-      <pubDate>Thu, 20 Nov 2025 12:00:49 -0500</pubDate>
-      <guid>http://localhost:1313/tags/primer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Todo</title>
-      <link>http://localhost:1313/tags/todo/</link>
-      <pubDate>Thu, 20 Nov 2025 12:00:49 -0500</pubDate>
-      <guid>http://localhost:1313/tags/todo/</guid>
-      <description></description>
-    </item>
+    <copyright>Ethan Li</copyright>
+    <lastBuildDate>Thu, 20 Nov 2025 09:32:25 -0500</lastBuildDate>
+    <atom:link href="https://ethanli-art.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://ethanli-art.github.io/tags/linux/</link>
       <pubDate>Thu, 20 Nov 2025 09:32:25 -0500</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://ethanli-art.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/tags/network/</link>
+      <link>https://ethanli-art.github.io/tags/network/</link>
       <pubDate>Thu, 20 Nov 2025 09:32:25 -0500</pubDate>
-      <guid>http://localhost:1313/tags/network/</guid>
+      <guid>https://ethanli-art.github.io/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Chinese</title>
-      <link>http://localhost:1313/tags/chinese/</link>
+      <link>https://ethanli-art.github.io/tags/chinese/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>http://localhost:1313/tags/chinese/</guid>
+      <guid>https://ethanli-art.github.io/tags/chinese/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>http://localhost:1313/tags/text/</link>
+      <link>https://ethanli-art.github.io/tags/text/</link>
       <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>http://localhost:1313/tags/text/</guid>
+      <guid>https://ethanli-art.github.io/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Typography</title>
-      <link>http://localhost:1313/tags/typography/</link>
+      <link>https://ethanli-art.github.io/tags/typography/</link>
       <pubDate>Sun, 18 Mar 2018 12:13:38 +0530</pubDate>
-      <guid>http://localhost:1313/tags/typography/</guid>
+      <guid>https://ethanli-art.github.io/tags/typography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Primer</title>
+      <link>https://ethanli-art.github.io/tags/primer/</link>
+      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <guid>https://ethanli-art.github.io/tags/primer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Todo</title>
+      <link>https://ethanli-art.github.io/tags/todo/</link>
+      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <guid>https://ethanli-art.github.io/tags/todo/</guid>
       <description></description>
     </item>
     <item>
       <title>Scene</title>
-      <link>http://localhost:1313/tags/scene/</link>
+      <link>https://ethanli-art.github.io/tags/scene/</link>
       <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
-      <guid>http://localhost:1313/tags/scene/</guid>
+      <guid>https://ethanli-art.github.io/tags/scene/</guid>
       <description></description>
     </item>
   </channel>
