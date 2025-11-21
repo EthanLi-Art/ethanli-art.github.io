@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ethan Li</copyright>
-    <lastBuildDate>Fri, 21 Nov 2025 19:30:37 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 16 Nov 2025 20:47:49 -0500</lastBuildDate>
     
         <atom:link href="https://ethanli-art.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -69,8 +69,6 @@
 &lt;br/&gt;
 - https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/ - Ethan Li</description>
         </item>
-    
-    
     
     
   </channel>
