@@ -1,0 +1,117 @@
+baseURL = "https://ethanli-art.github.io"
+languageCode = "en-us"
+title = "Ethan's Site"
+
+DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
+
+copyright = "Ethan's Site（2016 - 2026）"
+theme = "diary"
+# paginate: 10
+
+# Generate sitemap in the public folder
+[sitemap]
+  changefreq = "always"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    id = "G-XXXXXXXXXX"  # Your Google Analytics ID
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+[params]
+ favicon = "favicon.png"
+ disableToC = true
+ enableLaTeX = true
+ # enableReadingTime=true
+ # enableAutoCollapse = true
+# subtitle = "2"
+enableGitalk = false
+enableGiscus = true
+
+# Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
+clarity = "abcdefghzd"
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
+title = "My Blog" # will set 'og:site_name'
+description = "My HomePage Description"  # will set 'og:description'
+
+[params.gitalk]
+  owner = "user"
+  repo = "repo name"
+  client_id = "your client id"
+  client_secret = "your client secret"
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[params.utterances]
+repo="your repo"
+term="[ENTER TERM HERE]"
+label="your label"
+theme="github-light"
+
+# Please visit https://giscus.app/ to generate settings.
+[params.giscus]
+    data_repo="EthanLi-Art/giscus"
+    data_repo_id="R_kgDOQZr0Tg"
+    data_category="Announcements"
+    data_category_id="DIC_kwDOQZr0Ts4CyAn5"
+    data_mapping="pathname"
+    data_strict="0"
+    data_reactions_enabled="1"
+    data_emit_metadata="0"
+    data_input_position="bottom"
+    data_theme="preferred_color_scheme"
+    data_lang="zh-CN"
+    crossorigin="anonymous"
+
+# 侧边栏
+[[menu.main]]
+url = "/posts"
+name = "Archive"
+weight = 1
+
+[[menu.main]]
+url = "/categories"
+name = "Categories"
+weight = 2
+
+[[menu.main]]
+url = "/tags"
+name = "Tags"
+weight = 3
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+# [[menu.main]]
+#   name = "About"
+#   weight = 40
+#   # identifier = "about"
+#   url = "/about"
+
+# [[menu.main]]
+# url = "/index.xml"
+# name = "RSS Feed"
+# weight = 4
+
+[markup.goldmark.renderer]
+    unsafe = true
+
