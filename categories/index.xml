@@ -7,34 +7,13 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ethan Li</copyright>
-    <lastBuildDate>Thu, 20 Nov 2025 09:32:25 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2020 19:32:25 -0500</lastBuildDate>
     <atom:link href="https://ethanli-art.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Linux</title>
-      <link>https://ethanli-art.github.io/categories/linux/</link>
-      <pubDate>Thu, 20 Nov 2025 09:32:25 -0500</pubDate>
-      <guid>https://ethanli-art.github.io/categories/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chinese</title>
-      <link>https://ethanli-art.github.io/categories/chinese/</link>
-      <pubDate>Thu, 14 Nov 2019 11:25:05 -0400</pubDate>
-      <guid>https://ethanli-art.github.io/categories/chinese/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Todo</title>
-      <link>https://ethanli-art.github.io/categories/todo/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
-      <guid>https://ethanli-art.github.io/categories/todo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Story</title>
-      <link>https://ethanli-art.github.io/categories/story/</link>
-      <pubDate>Fri, 14 Apr 2017 11:25:05 -0400</pubDate>
-      <guid>https://ethanli-art.github.io/categories/story/</guid>
+      <title>Programming</title>
+      <link>https://ethanli-art.github.io/categories/programming/</link>
+      <pubDate>Fri, 20 Nov 2020 19:32:25 -0500</pubDate>
+      <guid>https://ethanli-art.github.io/categories/programming/</guid>
       <description></description>
     </item>
   </channel>

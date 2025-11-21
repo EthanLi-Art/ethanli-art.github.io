@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ethan&#39;s Site</title>
-    <link>https://ethanli-art.github.io/posts/</link>
-    <description>Recent content in Posts on Ethan&#39;s Site</description>
+    <title>Virtualbox on Ethan&#39;s Site</title>
+    <link>https://ethanli-art.github.io/tags/virtualbox/</link>
+    <description>Recent content in Virtualbox on Ethan&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ethan Li</copyright>
     <lastBuildDate>Fri, 20 Nov 2020 19:32:25 -0500</lastBuildDate>
-    <atom:link href="https://ethanli-art.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ethanli-art.github.io/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VirtualBox 配置双网卡并固定 IP</title>
       <link>https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/</link>
