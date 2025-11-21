@@ -32,6 +32,7 @@ theme = "diary"
     tabWidth = 4
 
 [params]
+mainSections = ["posts"]
  favicon = "favicon.png"
  disableToC = true
  enableLaTeX = true

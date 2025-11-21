@@ -5,8 +5,6 @@ description: "从课题分离、自我接纳到活出自我，这篇读书笔记
 featured_image: "/images/reading-notes/the-courage-to-be-disliked-title.webp"
 categories: reading-notes
 tags: [book-notes, psychology,self-growth]
-comment: false
-hidden: false
 draft : true
 ---
 

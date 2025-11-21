@@ -1,6 +1,7 @@
 ---
 title: 'About'
-type: "page"
+type: 'page'
+layout : 'single'
 ---
 
 <br/>
