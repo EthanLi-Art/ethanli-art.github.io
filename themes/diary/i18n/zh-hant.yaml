@@ -5,9 +5,9 @@
 - id: format_date_tosec
   translation: '{{ .Format "2006-01-02 15:04" }}'
 - id: next_link
-  translation: 下回
+  translation: Next
 - id: prev_link
-  translation: 上回
+  translation: Previou
 - id: no_newer_posts
   translation: 已經到底啦。
 - id: no_older_posts
@@ -23,6 +23,6 @@
 - id: by
   translation: by
 - id: draft
-  translation: 草稿
+  translation: Draft
 - id: toc_title
   translation: 目錄

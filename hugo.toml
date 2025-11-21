@@ -1,10 +1,10 @@
-baseURL = "https://ethanli-art.github.io"
+baseURL = "https://ethanli-art.github.io/"
 languageCode = "en-us"
 title = "Ethan's Site"
 
 DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 
-copyright = "Ethan's Site（2016 - 2026）"
+ copyright = "Ethan Li"
 theme = "diary"
 # paginate: 10
 

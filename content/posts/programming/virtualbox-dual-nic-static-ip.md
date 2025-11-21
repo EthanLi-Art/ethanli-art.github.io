@@ -1,14 +1,12 @@
 ---
-title : 'VirtualBox虚拟机配置双网卡实现固定IP'
-date : '2025-11-20T09:32:25-05:00'
-description : 'VirtualBox虚拟机配置双网卡实现固定IP'
+title: "VirtualBox 配置双网卡并固定 IP"
+date : '2020-11-20T19:32:25-05:00'
+description: "详细讲解如何在 VirtualBox 中配置双网卡（NAT + Host-Only），并为虚拟机设置静态 IP"
 draft : false
-featured_image : "/images/image.73u85qnuil.webp"
-categories: Linux
-tags: [Linux, Network]
+featured_image : "/images/programming/VirtualBox 配置双网卡并固定IP.webp"
+categories: programming
+tags: [linux, network,virtualbox]
 ---
-
-
 
 <br/>
 
