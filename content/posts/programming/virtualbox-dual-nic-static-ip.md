@@ -3,7 +3,7 @@ title: "VirtualBox 配置双网卡并固定 IP"
 date : '2020-11-20T19:32:25-05:00'
 description: "详细讲解如何在 VirtualBox 中配置双网卡（NAT + Host-Only），并为虚拟机设置静态 IP"
 draft : false
-featured_image : "/images/programming/VirtualBox 配置双网卡并固定IP.webp"
+featured_image : "/images/programming/virtualbox-dual-nic-static-ip.webp"
 categories: programming
 tags: [linux, network,virtualbox]
 ---
