@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://ethanli-art.github.io/</loc>
     <lastmod>2025-11-16T20:47:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://ethanli-art.github.io/posts/</loc>
     <lastmod>2025-11-16T20:47:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://ethanli-art.github.io/categories/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://ethanli-art.github.io/tags/linux/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/network/</loc>
+    <loc>https://ethanli-art.github.io/tags/network/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://ethanli-art.github.io/categories/programming/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://ethanli-art.github.io/tags/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/virtualbox/</loc>
+    <loc>https://ethanli-art.github.io/tags/virtualbox/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/</loc>
+    <loc>https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://ethanli-art.github.io/about/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>
