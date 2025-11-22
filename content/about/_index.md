@@ -2,16 +2,14 @@
 title: ''
 type: 'page'
 layout : 'single'
+# featured_image : "/images/about/potw1924a.jpg"
+# featured_image : "/images/about/heic0406a.jpg"
+# featured_image : "/images/about/heic1501a.jpg"
+featured_image : "/images/about/heic1712a.jpg"
 comment: false
 ---
 
 <br/>
-<br/>
-<br/>
-<br/>
-
-
-
 
 ### I focus on
 
@@ -26,6 +24,3 @@ I use this space to record my learning, reading, and reflections.
 
 I write to clarify my thoughts and sustain my growth.
 
-<br/>
-
-<br/>
