@@ -2,32 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ethan&#39;s Site</title>
-    <link>https://ethanli-art.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Ethan&#39;s Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ethan</copyright>
-    <lastBuildDate>Fri, 20 Nov 2020 19:32:25 -0500</lastBuildDate>
-    <atom:link href="https://ethanli-art.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Dec 2025 15:07:31 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primer</title>
+      <link>http://localhost:1313/tags/primer/</link>
+      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+      <guid>http://localhost:1313/tags/primer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Todo</title>
+      <link>http://localhost:1313/tags/todo/</link>
+      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+      <guid>http://localhost:1313/tags/todo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud-Native</title>
+      <link>http://localhost:1313/tags/cloud-native/</link>
+      <pubDate>Sat, 13 Dec 2025 19:53:44 -0500</pubDate>
+      <guid>http://localhost:1313/tags/cloud-native/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container</title>
+      <link>http://localhost:1313/tags/container/</link>
+      <pubDate>Sat, 13 Dec 2025 19:53:44 -0500</pubDate>
+      <guid>http://localhost:1313/tags/container/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Sat, 13 Dec 2025 19:53:44 -0500</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithm</title>
+      <link>http://localhost:1313/tags/algorithm/</link>
+      <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
+      <guid>http://localhost:1313/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Structure</title>
+      <link>http://localhost:1313/tags/data-structure/</link>
+      <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
+      <guid>http://localhost:1313/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Study-Notes</title>
+      <link>http://localhost:1313/tags/study-notes/</link>
+      <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
+      <guid>http://localhost:1313/tags/study-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Course Notes</title>
+      <link>http://localhost:1313/tags/course-notes/</link>
+      <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
+      <guid>http://localhost:1313/tags/course-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
+      <guid>http://localhost:1313/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Book-Notes</title>
+      <link>http://localhost:1313/tags/book-notes/</link>
+      <pubDate>Sun, 16 Nov 2025 20:47:49 -0500</pubDate>
+      <guid>http://localhost:1313/tags/book-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psychology</title>
+      <link>http://localhost:1313/tags/psychology/</link>
+      <pubDate>Sun, 16 Nov 2025 20:47:49 -0500</pubDate>
+      <guid>http://localhost:1313/tags/psychology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Self-Growth</title>
+      <link>http://localhost:1313/tags/self-growth/</link>
+      <pubDate>Sun, 16 Nov 2025 20:47:49 -0500</pubDate>
+      <guid>http://localhost:1313/tags/self-growth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mindfulness</title>
+      <link>http://localhost:1313/tags/mindfulness/</link>
+      <pubDate>Sat, 15 Nov 2025 19:30:37 -0500</pubDate>
+      <guid>http://localhost:1313/tags/mindfulness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Healing</title>
+      <link>http://localhost:1313/tags/healing/</link>
+      <pubDate>Sat, 18 Oct 2025 16:27:58 -0500</pubDate>
+      <guid>http://localhost:1313/tags/healing/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
-      <link>https://ethanli-art.github.io/tags/linux/</link>
+      <link>http://localhost:1313/tags/linux/</link>
       <pubDate>Fri, 20 Nov 2020 19:32:25 -0500</pubDate>
-      <guid>https://ethanli-art.github.io/tags/linux/</guid>
+      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://ethanli-art.github.io/tags/network/</link>
+      <link>http://localhost:1313/tags/network/</link>
       <pubDate>Fri, 20 Nov 2020 19:32:25 -0500</pubDate>
-      <guid>https://ethanli-art.github.io/tags/network/</guid>
+      <guid>http://localhost:1313/tags/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualbox</title>
-      <link>https://ethanli-art.github.io/tags/virtualbox/</link>
+      <link>http://localhost:1313/tags/virtualbox/</link>
       <pubDate>Fri, 20 Nov 2020 19:32:25 -0500</pubDate>
-      <guid>https://ethanli-art.github.io/tags/virtualbox/</guid>
+      <guid>http://localhost:1313/tags/virtualbox/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>《Python3.8 系统入门 &#43; 进阶》Course Notes</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="《Python3.8系统入门&#43;进阶 (程序员必备第二语言)》课程的学习笔记，涵盖基础语法、核心模块与项目实战">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/programming/python3.8-course-notes/">
+  <meta property="og:site_name" content="Ethan&#39;s Site">
+  <meta property="og:title" content="《Python3.8 系统入门 &#43; 进阶》Course Notes">
+  <meta property="og:description" content="《Python3.8系统入门&#43;进阶 (程序员必备第二语言)》课程的学习笔记，涵盖基础语法、核心模块与项目实战">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-23T16:39:14-05:00">
+    <meta property="article:modified_time" content="2025-11-23T16:39:14-05:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Course Notes">
+    <meta property="article:tag" content="Programming">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="《Python3.8 系统入门 &#43; 进阶》Course Notes">
+  <meta name="twitter:description" content="《Python3.8系统入门&#43;进阶 (程序员必备第二语言)》课程的学习笔记，涵盖基础语法、核心模块与项目实战">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" href="http://localhost:1313/favicon.png">
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/journal.min.1d5c2da19aba19aefe23cc496088bf17d9adee4e7ea7685ee6d9d839fa7c4c9e.css" integrity="sha256-HVwtoZq6Ga7&#43;I8xJYIi/F9mt7k5&#43;p2he5tnYOfp8TJ4=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/about/">
+                    About
+                </a>
+                
+            
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Ethan&#39;s Site
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Ethan&#39;s Site</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                
+                    
+                    
+                    style="background-image: url('https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.6wr5wfiks2.webp')"
+                    
+                
+            >
+                <div class="post-title">
+                    《Python3.8 系统入门 &#43; 进阶》Course Notes
+                    
+                    <div class="post-subtitle">
+                        《Python3.8系统入门&#43;进阶 (程序员必备第二语言)》课程的学习笔记，涵盖基础语法、核心模块与项目实战
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2025-11-23 16:39
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/programming">Programming</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/python">Python</a>
+                                &nbsp;
+                            
+                                <a href="/tags/course-notes">Course Notes</a>
+                                &nbsp;
+                            
+                                <a href="/tags/programming">Programming</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <br/>
+<h1 id="概述">概述</h1>
+<br/>
+<br/>
+<br/>
+<h1 id="第2章-python环境安装">第2章 Python环境安装</h1>
+<h2 id="如何有效提问">如何有效提问</h2>
+<ul>
+<li>略</li>
+</ul>
+<br/>
+<br/>
+<h2 id="python学习建议">Python学习建议</h2>
+<ul>
+<li>
+<p>如何学习这门课</p>
+<ul>
+<li>认真看视频</li>
+<li>跟着视频写代码</li>
+<li>课后思考题尽量完成，即使完成不了也需要也要跟着思考</li>
+</ul>
+</li>
+<li>
+<p>配套书籍</p>
+<ul>
+<li>跟着视频学习就不需要其它基础教程了</li>
+<li>唯一推荐《流程的Python》，作为高级内容的补充</li>
+</ul>
+</li>
+<li>
+<p>有必要做习题吗？</p>
+<ul>
+<li>不推荐</li>
+<li>编程的目的是为了解决问题</li>
+</ul>
+</li>
+<li>
+<p>后续学习方向</p>
+<ul>
+<li>web开发（使用python做web开发更适合个人开发者）
+<ul>
+<li>数据库、选择一个web框架（Django，Flask）</li>
+</ul>
+</li>
+<li>数据分析
+<ul>
+<li>误区：看重工具（库、框架）的学习</li>
+<li>重点：数学模型</li>
+</ul>
+</li>
+<li>AI
+<ul>
+<li>Python只是辅助，重点学习AI相关的知识</li>
+</ul>
+</li>
+<li>工作效率，自动化处理
+<ul>
+<li>搜索</li>
+</ul>
+</li>
+</ul>
+<br/>
+<br/>
+</li>
+</ul>
+<h2 id="版本选择">版本选择</h2>
+<ul>
+<li>建议安装Python 3.8</li>
+<li>多版本安装：使用虚拟环境</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<h1 id="第3章-理解什么是写代码与python的基本类型">第3章 理解什么是写代码与Python的基本类型</h1>
+<h2 id="前言">前言</h2>
+<ul>
+<li>什么是代码：代码是现实世界事物在计算机世界中的映射</li>
+<li>什么是写代码：将现实世界中的事务用计算机语言来描述</li>
+</ul>
+<br/>
+<br/>
+<h2 id="基本数据类型">基本数据类型</h2>
+<ul>
+<li>Number
+<ul>
+<li>整数：int（其它语言中对整数可能还有细分，但在Python中只有int）</li>
+<li>（小数）浮点数：float [其它编程语言中有双精度（double）和单精度（float）之分，但Python中没有这种区分，默认float直接对应其它编程语言中的双精度]</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># Python中两个整数（或者任何数）相除会得到float类型</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; <span style="color:#cb4b16">type</span>(<span style="color:#2aa198;font-weight:bold">4</span>/<span style="color:#2aa198;font-weight:bold">2</span>)
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#859900">class</span> &#39;<span style="color:#cb4b16">float</span><span style="color:#2aa198">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 如果想让结果得到整数类型，需使用 // ，// 表示整除</span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; <span style="color:#cb4b16">type</span>(<span style="color:#2aa198;font-weight:bold">4</span>//<span style="color:#2aa198;font-weight:bold">2</span>)
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#859900">class</span> &#39;<span style="color:#cb4b16">int</span><span style="color:#2aa198">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; <span style="color:#cb4b16">type</span>(<span style="color:#2aa198;font-weight:bold">5</span>//<span style="color:#2aa198;font-weight:bold">2</span>)
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#859900">class</span> &#39;<span style="color:#cb4b16">int</span><span style="color:#2aa198">&#39;&gt;</span>
+</span></span></code></pre></div><ul>
+<li>进制的表示与转换</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 二进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#2aa198;font-weight:bold">0b1010</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 八进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#2aa198;font-weight:bold">0o10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 十六进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#2aa198;font-weight:bold">0x1F</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 任意进制转二进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">bin</span>(<span style="color:#268bd2">xxx</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 转十进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">int</span>(<span style="color:#268bd2">xxx</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 转16进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">hex</span>(<span style="color:#268bd2">xxx</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 转八进制</span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">oct</span>(<span style="color:#268bd2">xxx</span>)
+</span></span></code></pre></div><ul>
+<li>bool（布尔）类型
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># False</span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">bool</span>(<span style="color:#2aa198;font-weight:bold">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 所有非0是True</span>
+</span></span></code></pre></div><ul>
+<li>
+<p>其它类型可以向bool类型转换</p>
+</li>
+<li>
+<p>一般情况：</p>
+<ul>
+<li>非空会被转换成True</li>
+<li>空值会被转换成False</li>
+</ul>
+</li>
+<li>
+<p>complex（复数）类型</p>
+<ul>
+<li>36j</li>
+</ul>
+</li>
+<li>
+<p>str 字符串</p>
+<ul>
+<li>字符串的表示：单引号，双引号，三引号</li>
+<li>转移字符</li>
+<li>字符串的运算</li>
+</ul>
+</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<h1 id="reference">Reference</h1>
+<br/>
+<br/>
+<br/>
+<h1 id="remark">remark</h1>
+<blockquote>
+<p>1.</p>
+</blockquote>
+<img src='' width='70%' />
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2025-11-23</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+                <p style="opacity: 0.6" align="center">
+                    <small></small>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Ethan&#39;s Site
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/about/">
+                About
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+
+<br>
+
+&copy;
+<a href="mailto:ethanli.engineer@gmail.com">Ethan</a>
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- Contents -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e6%a6%82%e8%bf%b0" class="nav-概述">
+									概述
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac2%e7%ab%a0-python%e7%8e%af%e5%a2%83%e5%ae%89%e8%a3%85" class="nav-第2章-python环境安装">
+									第2章 Python环境安装
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e5%a6%82%e4%bd%95%e6%9c%89%e6%95%88%e6%8f%90%e9%97%ae" class="nav-如何有效提问">
+									如何有效提问
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#python%e5%ad%a6%e4%b9%a0%e5%bb%ba%e8%ae%ae" class="nav-python学习建议">
+									Python学习建议
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%89%88%e6%9c%ac%e9%80%89%e6%8b%a9" class="nav-版本选择">
+									版本选择
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac3%e7%ab%a0-%e7%90%86%e8%a7%a3%e4%bb%80%e4%b9%88%e6%98%af%e5%86%99%e4%bb%a3%e7%a0%81%e4%b8%8epython%e7%9a%84%e5%9f%ba%e6%9c%ac%e7%b1%bb%e5%9e%8b" class="nav-第3章-理解什么是写代码与python的基本类型">
+									第3章 理解什么是写代码与Python的基本类型
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e5%89%8d%e8%a8%80" class="nav-前言">
+									前言
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%9f%ba%e6%9c%ac%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b" class="nav-基本数据类型">
+									基本数据类型
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#reference" class="nav-reference">
+									Reference
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#remark" class="nav-remark">
+									remark
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+
+<br>
+
+&copy;
+<a href="mailto:ethanli.engineer@gmail.com">Ethan</a>
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

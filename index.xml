@@ -2,24 +2,491 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethan&#39;s Site</title>
-    <link>https://ethanli-art.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Ethan&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ethan</copyright>
-    <lastBuildDate>Sun, 16 Nov 2025 20:47:49 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 15:07:31 -0500</lastBuildDate>
     
-        <atom:link href="https://ethanli-art.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>Data Structures and Algorithms Learning Notes</title>
+        <link>http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/</link>
+        <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/ -&lt;br/&gt;
+# 概述
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>Docker Learning Notes</title>
+        <link>http://localhost:1313/posts/programming/docker-learning-notes/</link>
+        <pubDate>Sat, 13 Dec 2025 19:53:44 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/docker-learning-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/docker-learning-notes/ -&lt;br/&gt;
+&lt;h1 id=&#34;容器技术概述&#34;&gt;容器技术概述&lt;/h1&gt;
+&lt;h2 id=&#34;容器发展简史&#34;&gt;容器发展简史&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;90年代的PC&lt;/li&gt;
+&lt;li&gt;00年代的虚拟化&lt;/li&gt;
+&lt;li&gt;10年代的cloud&lt;/li&gt;
+&lt;li&gt;11年代的container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;什么是-container&#34;&gt;什么是 container&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;容器是一种快速的打包技术&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;容器的特点&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;标准化&lt;/li&gt;
+&lt;li&gt;轻量级&lt;/li&gt;
+&lt;li&gt;易移植&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;为什么容器技术会出现&#34;&gt;为什么容器技术会出现？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux Container容器技术的诞生于2008年（Docker诞生于2013年），解决了IT世界里“集装箱运输”的问题。Linux Container（简称LXC）它是一种内核轻量级的操作系统层虚拟化技术。Linux Container主要由Namespace和Cgroups 两大机制来保证实现
+&lt;ul&gt;
+&lt;li&gt;Namespace主要用于资源的隔离（诞生于2002年）&lt;/li&gt;
+&lt;li&gt;Cgroups(Control Groups)就负责资源管理控制作用，比如进程组使用CPU/MEM的限制，进程组的优先级控制，进程组的挂起和恢复等等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;容器的标准化&#34;&gt;容器的标准化&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;docker != container&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在2015年，由Google，Docker、红帽等厂商联合发起了OCI（Open Container Initiative）组织，致力于容器技术的标准化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;runtime-spec容器运行时标准&#34;&gt;runtime spec（容器运行时标准）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;简单来讲就是规定了容器的基本操作规范，比如如何下载镜像，创建容器，启动容器等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;h3 id=&#34;image-spec容器镜像标准&#34;&gt;image spec（容器镜像标准）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;主要定义镜像的基本格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;容器是关乎速度&#34;&gt;容器是关乎“速度”&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;容器会加速你的软件开发&lt;/li&gt;
+&lt;li&gt;容器会加速你的程序编译和构建&lt;/li&gt;
+&lt;li&gt;容器会加速你的测试&lt;/li&gt;
+&lt;li&gt;容器会加速你的部署&lt;/li&gt;
+&lt;li&gt;容器会加速你的更新&lt;/li&gt;
+&lt;li&gt;容器会加速你的故障恢复&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;docker-快速上手&#34;&gt;Docker 快速上手&lt;/h1&gt;
+&lt;h2 id=&#34;安装-docker&#34;&gt;安装 Docker&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# linux 安装docker&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL get.docker.com -o get-docker.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod +x get-docker.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sh get-docker.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/programming/docker-learning-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《Grokking Algorithms》Study Notes</title>
+        <link>http://localhost:1313/posts/programming/grokking-algorithms-notes/</link>
+        <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/grokking-algorithms-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/grokking-algorithms-notes/ -&lt;br/&gt;
+&lt;h1 id=&#34;第1章-算法简介&#34;&gt;第1章 算法简介&lt;/h1&gt;
+&lt;h2 id=&#34;二分查找&#34;&gt;二分查找&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# python3 实现二分查找&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#859900&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;binary_search&lt;/span&gt;(&lt;span style=&#34;color:#cb4b16&#34;&gt;list&lt;/span&gt;,&lt;span style=&#34;color:#268bd2&#34;&gt;item&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;low&lt;/span&gt; = &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;hight&lt;/span&gt; = &lt;span style=&#34;color:#cb4b16&#34;&gt;len&lt;/span&gt;(&lt;span style=&#34;color:#cb4b16&#34;&gt;list&lt;/span&gt;)-&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;low&lt;/span&gt; &amp;lt;= &lt;span style=&#34;color:#268bd2&#34;&gt;hight&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt; = (&lt;span style=&#34;color:#268bd2&#34;&gt;low&lt;/span&gt; + &lt;span style=&#34;color:#268bd2&#34;&gt;hight&lt;/span&gt;)//&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;list&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt;] == &lt;span style=&#34;color:#268bd2&#34;&gt;item&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;list&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt;] &amp;lt; &lt;span style=&#34;color:#268bd2&#34;&gt;item&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#268bd2&#34;&gt;low&lt;/span&gt; = &lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt;+&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#268bd2&#34;&gt;hight&lt;/span&gt; = &lt;span style=&#34;color:#268bd2&#34;&gt;mid&lt;/span&gt;-&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;my_list&lt;/span&gt; = [&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;3&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;7&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;9&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;binary_search&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;my_list&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;3&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;binary_search&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;my_list&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;9&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;大-o-表示法&#34;&gt;大 O 表示法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;仅知道算法需要多长时间才能运行完毕还不够，还需知道运行时间如何随列表增长而增加。这正是大O表示法的用武之地&lt;/li&gt;
+&lt;li&gt;大 O 表示法用于描述算法的渐进时间复杂度或空间复杂度，表示随着输入规模 n 增大，算法的运行时间（或空间使用）在数量级上的上界&lt;/li&gt;
+&lt;li&gt;大 O 表示法指出了最糟情况下的运行时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;算法复杂度&#34;&gt;算法复杂度&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;算法的速度指的并非时间，而是操作数的增速&lt;/li&gt;
+&lt;li&gt;谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加&lt;/li&gt;
+&lt;li&gt;算法的运行时间用大O表示法表示&lt;/li&gt;
+&lt;li&gt;O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多&lt;/li&gt;
+&lt;li&gt;算法运行时间是从其增速的角度度量的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第2章-选择排序&#34;&gt;第2章 选择排序&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;熟悉数组和；链表的增删改查的时间复杂度，以及其优势和劣势&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#859900&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;selection_sort&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#268bd2&#34;&gt;n&lt;/span&gt; = &lt;span style=&#34;color:#cb4b16&#34;&gt;len&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#859900&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;range&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;n&lt;/span&gt;-&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#268bd2&#34;&gt;min_index&lt;/span&gt; = &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;j&lt;/span&gt; &lt;span style=&#34;color:#859900&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;range&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;+&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#268bd2&#34;&gt;n&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#859900&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;j&lt;/span&gt;] &amp;lt; &lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;min_index&lt;/span&gt;]:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#268bd2&#34;&gt;min_index&lt;/span&gt; = &lt;span style=&#34;color:#268bd2&#34;&gt;j&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;],&lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;min_index&lt;/span&gt;] = &lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;min_index&lt;/span&gt;],&lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;arr&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#268bd2&#34;&gt;nums&lt;/span&gt; = [&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;64&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;25&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;12&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;22&lt;/span&gt;, &lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;11&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;90&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;22&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;23&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;12&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;6&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;3&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;8&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;99&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;4&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;54&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;3&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;543&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;43&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;43&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;,&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;543543534543&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;selection_sort&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;nums&lt;/span&gt;))
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第三章-递归&#34;&gt;第三章 递归&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;栈只有2种操作：压入栈和弹出栈&lt;/li&gt;
+&lt;li&gt;递归指的是调用自己的函数&lt;/li&gt;
+&lt;li&gt;每个递归函数都有两个条件：基线条件和递归条件&lt;/li&gt;
+&lt;li&gt;栈有两种操作：压入和弹出&lt;/li&gt;
+&lt;li&gt;所有函数调用都进入调用栈&lt;/li&gt;
+&lt;li&gt;调用栈可能很长，这将占用大量的内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第四章-快速排序&#34;&gt;第四章 快速排序&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;快速排序使用分而治之的策略&lt;/li&gt;
+&lt;li&gt;使用D&amp;amp;C解决问题的过程包括两个步骤
+&lt;ul&gt;
+&lt;li&gt;(1) 找出基线条件，这种条件必须尽可能简单&lt;/li&gt;
+&lt;li&gt;(2) 不断将问题分解（或者说缩小规模），直到符合基线条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+- http://localhost:1313/posts/programming/grokking-algorithms-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《Python3.8 系统入门 &#43; 进阶》Course Notes</title>
+        <link>http://localhost:1313/posts/programming/python3.8-course-notes/</link>
+        <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/python3.8-course-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/python3.8-course-notes/ -&lt;br/&gt;
+&lt;h1 id=&#34;概述&#34;&gt;概述&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第2章-python环境安装&#34;&gt;第2章 Python环境安装&lt;/h1&gt;
+&lt;h2 id=&#34;如何有效提问&#34;&gt;如何有效提问&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;python学习建议&#34;&gt;Python学习建议&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如何学习这门课&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;认真看视频&lt;/li&gt;
+&lt;li&gt;跟着视频写代码&lt;/li&gt;
+&lt;li&gt;课后思考题尽量完成，即使完成不了也需要也要跟着思考&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配套书籍&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;跟着视频学习就不需要其它基础教程了&lt;/li&gt;
+&lt;li&gt;唯一推荐《流程的Python》，作为高级内容的补充&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有必要做习题吗？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不推荐&lt;/li&gt;
+&lt;li&gt;编程的目的是为了解决问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;后续学习方向&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;web开发（使用python做web开发更适合个人开发者）
+&lt;ul&gt;
+&lt;li&gt;数据库、选择一个web框架（Django，Flask）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据分析
+&lt;ul&gt;
+&lt;li&gt;误区：看重工具（库、框架）的学习&lt;/li&gt;
+&lt;li&gt;重点：数学模型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AI
+&lt;ul&gt;
+&lt;li&gt;Python只是辅助，重点学习AI相关的知识&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;工作效率，自动化处理
+&lt;ul&gt;
+&lt;li&gt;搜索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;版本选择&#34;&gt;版本选择&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;建议安装Python 3.8&lt;/li&gt;
+&lt;li&gt;多版本安装：使用虚拟环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第3章-理解什么是写代码与python的基本类型&#34;&gt;第3章 理解什么是写代码与Python的基本类型&lt;/h1&gt;
+&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是代码：代码是现实世界事物在计算机世界中的映射&lt;/li&gt;
+&lt;li&gt;什么是写代码：将现实世界中的事务用计算机语言来描述&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;基本数据类型&#34;&gt;基本数据类型&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Number
+&lt;ul&gt;
+&lt;li&gt;整数：int（其它语言中对整数可能还有细分，但在Python中只有int）&lt;/li&gt;
+&lt;li&gt;（小数）浮点数：float [其它编程语言中有双精度（double）和单精度（float）之分，但Python中没有这种区分，默认float直接对应其它编程语言中的双精度]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# Python中两个整数（或者任何数）相除会得到float类型&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;4&lt;/span&gt;/&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#859900&#34;&gt;class&lt;/span&gt; &amp;#39;&lt;span style=&#34;color:#cb4b16&#34;&gt;float&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 如果想让结果得到整数类型，需使用 // ，// 表示整除&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;4&lt;/span&gt;//&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#859900&#34;&gt;class&lt;/span&gt; &amp;#39;&lt;span style=&#34;color:#cb4b16&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;type&lt;/span&gt;(&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;5&lt;/span&gt;//&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;2&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#859900&#34;&gt;class&lt;/span&gt; &amp;#39;&lt;span style=&#34;color:#cb4b16&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#39;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;进制的表示与转换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 二进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;0b1010&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 八进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;0o10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 十六进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;0x1F&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 任意进制转二进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;bin&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;xxx&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 转十进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;int&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;xxx&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 转16进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;hex&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;xxx&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 转八进制&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;oct&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;xxx&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;bool（布尔）类型
+&lt;ul&gt;
+&lt;li&gt;True&lt;/li&gt;
+&lt;li&gt;False&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# False&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#cb4b16&#34;&gt;bool&lt;/span&gt;(&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;# 所有非0是True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;其它类型可以向bool类型转换&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一般情况：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非空会被转换成True&lt;/li&gt;
+&lt;li&gt;空值会被转换成False&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;complex（复数）类型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;36j&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;str 字符串&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串的表示：单引号，双引号，三引号&lt;/li&gt;
+&lt;li&gt;转移字符&lt;/li&gt;
+&lt;li&gt;字符串的运算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/programming/python3.8-course-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《被讨厌的勇气》Reading Notes: How to Build a Free Personality</title>
+        <link>http://localhost:1313/posts/reading-notes/the-courage-to-be-disliked-reading-notes/</link>
+        <pubDate>Sun, 16 Nov 2025 20:47:49 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/reading-notes/the-courage-to-be-disliked-reading-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/reading-notes/the-courage-to-be-disliked-reading-notes/ -&lt;br/&gt;
+# 概述
+- http://localhost:1313/posts/reading-notes/the-courage-to-be-disliked-reading-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《我可能错了》Reading Notes: How to Live Lightly and Clearly</title>
+        <link>http://localhost:1313/posts/reading-notes/buddhist-monk-wrong-reading-notes/</link>
+        <pubDate>Sat, 15 Nov 2025 19:30:37 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/reading-notes/buddhist-monk-wrong-reading-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/reading-notes/buddhist-monk-wrong-reading-notes/ -&lt;br/&gt;
+# 概述
+- http://localhost:1313/posts/reading-notes/buddhist-monk-wrong-reading-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《也许你该找个人聊聊》Reading Notes: Learn to Heal Yourself by Understanding Yourself</title>
+        <link>http://localhost:1313/posts/reading-notes/maybe-you-should-talk-to-someone-reading-notes/</link>
+        <pubDate>Sat, 18 Oct 2025 16:27:58 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/reading-notes/maybe-you-should-talk-to-someone-reading-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/reading-notes/maybe-you-should-talk-to-someone-reading-notes/ -&lt;br/&gt;
+# 概述
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/reading-notes/maybe-you-should-talk-to-someone-reading-notes/ - Ethan</description>
+        </item>
     
     
     
         <item>
         <title>VirtualBox 配置双网卡并固定 IP</title>
-        <link>https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/</link>
+        <link>http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/</link>
         <pubDate>Fri, 20 Nov 2020 19:32:25 -0500</pubDate>
         
-        <guid>https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/</guid>
-        <description>Ethan&#39;s Site https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/ -&lt;br/&gt;
+        <guid>http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/ -&lt;br/&gt;
 &lt;h1 id=&#34;操作概述&#34;&gt;操作概述&lt;/h1&gt;
 &lt;h2 id=&#34;虚拟机环境&#34;&gt;虚拟机环境&lt;/h2&gt;
 &lt;ul&gt;
@@ -67,7 +534,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br/&gt;
 &lt;br/&gt;
 &lt;br/&gt;
-- https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/ - Ethan</description>
+- http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/ - Ethan</description>
         </item>
     
     

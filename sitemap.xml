@@ -2,52 +2,187 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ethanli-art.github.io/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/primer/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/todo/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/todo/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/cloud-native/</loc>
+    <lastmod>2025-12-13T19:53:44-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/cloud-native/</loc>
+    <lastmod>2025-12-13T19:53:44-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/container/</loc>
+    <lastmod>2025-12-13T19:53:44-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2025-12-13T19:53:44-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/programming/docker-learning-notes/</loc>
+    <lastmod>2025-12-13T19:53:44-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/programming/grokking-algorithms-notes/</loc>
+    <lastmod>2025-11-30T15:30:09-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/algorithm/</loc>
+    <lastmod>2025-11-30T15:30:09-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/algorithm/</loc>
+    <lastmod>2025-11-30T15:30:09-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-structure/</loc>
+    <lastmod>2025-11-30T15:30:09-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/study-notes/</loc>
+    <lastmod>2025-11-30T15:30:09-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/programming/python3.8-course-notes/</loc>
+    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/course-notes/</loc>
+    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/programming/</loc>
+    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/programming/</loc>
+    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/reading-notes/the-courage-to-be-disliked-reading-notes/</loc>
     <lastmod>2025-11-16T20:47:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/posts/</loc>
+    <loc>http://localhost:1313/tags/book-notes/</loc>
     <lastmod>2025-11-16T20:47:49-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/categories/</loc>
+    <loc>http://localhost:1313/tags/psychology/</loc>
+    <lastmod>2025-11-16T20:47:49-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/reading-notes/</loc>
+    <lastmod>2025-11-16T20:47:49-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/self-growth/</loc>
+    <lastmod>2025-11-16T20:47:49-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/reading-notes/buddhist-monk-wrong-reading-notes/</loc>
+    <lastmod>2025-11-15T19:30:37-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/mindfulness/</loc>
+    <lastmod>2025-11-15T19:30:37-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/reading-notes/maybe-you-should-talk-to-someone-reading-notes/</loc>
+    <lastmod>2025-10-18T16:27:58-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/healing/</loc>
+    <lastmod>2025-10-18T16:27:58-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/tags/linux/</loc>
+    <loc>http://localhost:1313/tags/network/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/tags/network/</loc>
+    <loc>http://localhost:1313/tags/virtualbox/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/categories/programming/</loc>
+    <loc>http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/</loc>
     <lastmod>2020-11-20T19:32:25-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ethanli-art.github.io/tags/</loc>
-    <lastmod>2020-11-20T19:32:25-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ethanli-art.github.io/tags/virtualbox/</loc>
-    <lastmod>2020-11-20T19:32:25-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ethanli-art.github.io/posts/programming/virtualbox-dual-nic-static-ip/</loc>
-    <lastmod>2020-11-20T19:32:25-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ethanli-art.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

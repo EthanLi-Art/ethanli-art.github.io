@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title>《Grokking Algorithms》Study Notes</title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="Study notes on the book 《Grokking Algorithms》">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/programming/grokking-algorithms-notes/">
+  <meta property="og:site_name" content="Ethan&#39;s Site">
+  <meta property="og:title" content="《Grokking Algorithms》Study Notes">
+  <meta property="og:description" content="Study notes on the book 《Grokking Algorithms》">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-30T15:30:09-05:00">
+    <meta property="article:modified_time" content="2025-11-30T15:30:09-05:00">
+    <meta property="article:tag" content="Algorithm">
+    <meta property="article:tag" content="Data-Structure">
+    <meta property="article:tag" content="Study-Notes">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="《Grokking Algorithms》Study Notes">
+  <meta name="twitter:description" content="Study notes on the book 《Grokking Algorithms》">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+<link rel="icon" href="http://localhost:1313/favicon.png">
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/journal.min.1d5c2da19aba19aefe23cc496088bf17d9adee4e7ea7685ee6d9d839fa7c4c9e.css" integrity="sha256-HVwtoZq6Ga7&#43;I8xJYIi/F9mt7k5&#43;p2he5tnYOfp8TJ4=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/about/">
+                    About
+                </a>
+                
+            
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            Ethan&#39;s Site
+        </a>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">Ethan&#39;s Site</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+                
+            
+
+            <div class="post-head-wrapper"
+                
+                    
+                    
+                    style="background-image: url('http://localhost:1313/images/programming/grokking-algorithms-notes.png')"
+                    
+                
+            >
+                <div class="post-title">
+                    《Grokking Algorithms》Study Notes
+                    
+                    <div class="post-subtitle">
+                        Study notes on the book 《Grokking Algorithms》
+                    </div>
+                    
+                    <div class="post-meta">
+                        
+                        <time itemprop="datePublished">
+                            2025-11-30 15:30
+                        </time>
+                        
+
+                        
+                            <i class="material-icons" style="">folder</i>
+                                <a href="/categories/algorithm">algorithm</a>
+                                &nbsp;
+                        
+
+                        
+                            <i class="material-icons" style="">label</i>
+                            
+                                <a href="/tags/algorithm">algorithm</a>
+                                &nbsp;
+                            
+                                <a href="/tags/data-structure">data-structure</a>
+                                &nbsp;
+                            
+                                <a href="/tags/study-notes">study-notes</a>
+                                &nbsp;
+                            
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <br/>
+<h1 id="第1章-算法简介">第1章 算法简介</h1>
+<h2 id="二分查找">二分查找</h2>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># python3 实现二分查找</span>
+</span></span><span style="display:flex;"><span><span style="color:#859900">def</span> <span style="color:#268bd2">binary_search</span>(<span style="color:#cb4b16">list</span>,<span style="color:#268bd2">item</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">low</span> = <span style="color:#2aa198;font-weight:bold">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">hight</span> = <span style="color:#cb4b16">len</span>(<span style="color:#cb4b16">list</span>)-<span style="color:#2aa198;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#859900">while</span> <span style="color:#268bd2">low</span> &lt;= <span style="color:#268bd2">hight</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">mid</span> = (<span style="color:#268bd2">low</span> + <span style="color:#268bd2">hight</span>)//<span style="color:#2aa198;font-weight:bold">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#859900">if</span> <span style="color:#cb4b16">list</span>[<span style="color:#268bd2">mid</span>] == <span style="color:#268bd2">item</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#859900">return</span> <span style="color:#268bd2">mid</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#859900">elif</span> <span style="color:#cb4b16">list</span>[<span style="color:#268bd2">mid</span>] &lt; <span style="color:#268bd2">item</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#268bd2">low</span> = <span style="color:#268bd2">mid</span>+<span style="color:#2aa198;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#859900">else</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#268bd2">hight</span> = <span style="color:#268bd2">mid</span>-<span style="color:#2aa198;font-weight:bold">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#859900">return</span> <span style="color:#859900;font-weight:bold">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">my_list</span> = [<span style="color:#2aa198;font-weight:bold">1</span>, <span style="color:#2aa198;font-weight:bold">3</span>, <span style="color:#2aa198;font-weight:bold">5</span>, <span style="color:#2aa198;font-weight:bold">7</span>, <span style="color:#2aa198;font-weight:bold">9</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">print</span>(<span style="color:#268bd2">binary_search</span>(<span style="color:#268bd2">my_list</span>,<span style="color:#2aa198;font-weight:bold">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">print</span>(<span style="color:#268bd2">binary_search</span>(<span style="color:#268bd2">my_list</span>,<span style="color:#2aa198;font-weight:bold">9</span>))
+</span></span></code></pre></div><br/>
+<br/>
+<h2 id="大-o-表示法">大 O 表示法</h2>
+<ul>
+<li>仅知道算法需要多长时间才能运行完毕还不够，还需知道运行时间如何随列表增长而增加。这正是大O表示法的用武之地</li>
+<li>大 O 表示法用于描述算法的渐进时间复杂度或空间复杂度，表示随着输入规模 n 增大，算法的运行时间（或空间使用）在数量级上的上界</li>
+<li>大 O 表示法指出了最糟情况下的运行时间</li>
+</ul>
+<br/>
+<br/>
+<h2 id="算法复杂度">算法复杂度</h2>
+<ul>
+<li>算法的速度指的并非时间，而是操作数的增速</li>
+<li>谈论算法的速度时，我们说的是随着输入的增加，其运行时间将以什么样的速度增加</li>
+<li>算法的运行时间用大O表示法表示</li>
+<li>O(log n)比O(n)快，当需要搜索的元素越多时，前者比后者快得越多</li>
+<li>算法运行时间是从其增速的角度度量的</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<h1 id="第2章-选择排序">第2章 选择排序</h1>
+<ul>
+<li>熟悉数组和；链表的增删改查的时间复杂度，以及其优势和劣势</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#859900">def</span> <span style="color:#268bd2">selection_sort</span>(<span style="color:#268bd2">arr</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">n</span> = <span style="color:#cb4b16">len</span>(<span style="color:#268bd2">arr</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#859900">for</span> <span style="color:#268bd2">i</span> <span style="color:#859900">in</span> <span style="color:#cb4b16">range</span>(<span style="color:#268bd2">n</span>-<span style="color:#2aa198;font-weight:bold">1</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">min_index</span> = <span style="color:#268bd2">i</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#859900">for</span> <span style="color:#268bd2">j</span> <span style="color:#859900">in</span> <span style="color:#cb4b16">range</span>(<span style="color:#268bd2">i</span>+<span style="color:#2aa198;font-weight:bold">1</span>,<span style="color:#268bd2">n</span>):
+</span></span><span style="display:flex;"><span>            <span style="color:#859900">if</span> <span style="color:#268bd2">arr</span>[<span style="color:#268bd2">j</span>] &lt; <span style="color:#268bd2">arr</span>[<span style="color:#268bd2">min_index</span>]:
+</span></span><span style="display:flex;"><span>                <span style="color:#268bd2">min_index</span> = <span style="color:#268bd2">j</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#268bd2">arr</span>[<span style="color:#268bd2">i</span>],<span style="color:#268bd2">arr</span>[<span style="color:#268bd2">min_index</span>] = <span style="color:#268bd2">arr</span>[<span style="color:#268bd2">min_index</span>],<span style="color:#268bd2">arr</span>[<span style="color:#268bd2">i</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#859900">return</span> <span style="color:#268bd2">arr</span>
+</span></span><span style="display:flex;"><span><span style="color:#268bd2">nums</span> = [<span style="color:#2aa198;font-weight:bold">64</span>, <span style="color:#2aa198;font-weight:bold">25</span>, <span style="color:#2aa198;font-weight:bold">12</span>, <span style="color:#2aa198;font-weight:bold">22</span>, <span style="color:#2aa198;font-weight:bold">11</span>,<span style="color:#2aa198;font-weight:bold">90</span>,<span style="color:#2aa198;font-weight:bold">22</span>,<span style="color:#2aa198;font-weight:bold">23</span>,<span style="color:#2aa198;font-weight:bold">12</span>,<span style="color:#2aa198;font-weight:bold">4</span>,<span style="color:#2aa198;font-weight:bold">6</span>,<span style="color:#2aa198;font-weight:bold">3</span>,<span style="color:#2aa198;font-weight:bold">8</span>,<span style="color:#2aa198;font-weight:bold">99</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">4</span>,<span style="color:#2aa198;font-weight:bold">54</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">3</span>,<span style="color:#2aa198;font-weight:bold">543</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">43</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">43</span>,<span style="color:#2aa198;font-weight:bold">5</span>,<span style="color:#2aa198;font-weight:bold">543543534543</span>]
+</span></span><span style="display:flex;"><span><span style="color:#cb4b16">print</span>(<span style="color:#268bd2">selection_sort</span>(<span style="color:#268bd2">nums</span>))
+</span></span></code></pre></div><br/>
+<br/>
+<br/>
+<h1 id="第三章-递归">第三章 递归</h1>
+<ul>
+<li>栈只有2种操作：压入栈和弹出栈</li>
+<li>递归指的是调用自己的函数</li>
+<li>每个递归函数都有两个条件：基线条件和递归条件</li>
+<li>栈有两种操作：压入和弹出</li>
+<li>所有函数调用都进入调用栈</li>
+<li>调用栈可能很长，这将占用大量的内存</li>
+</ul>
+<br/>
+<br/>
+<br/>
+<h1 id="第四章-快速排序">第四章 快速排序</h1>
+<ul>
+<li>快速排序使用分而治之的策略</li>
+<li>使用D&amp;C解决问题的过程包括两个步骤
+<ul>
+<li>(1) 找出基线条件，这种条件必须尽可能简单</li>
+<li>(2) 不断将问题分解（或者说缩小规模），直到符合基线条件</li>
+</ul>
+</li>
+<li></li>
+</ul>
+
+                    
+                    <HR width="100%" id="EOF">
+		    <p style="color:#777;">最后修改于 2025-11-30</p>
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="EthanLi-Art/giscus"
+        data-repo-id="R_kgDOQZr0Tg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQZr0Ts4CyAn5"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            Ethan&#39;s Site
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/about/">
+                About
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+
+<br>
+
+&copy;
+<a href="mailto:ethanli.engineer@gmail.com">Ethan</a>
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- Contents -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac1%e7%ab%a0-%e7%ae%97%e6%b3%95%e7%ae%80%e4%bb%8b" class="nav-第1章-算法简介">
+									第1章 算法简介
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be" class="nav-二分查找">
+									二分查找
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e5%a4%a7-o-%e8%a1%a8%e7%a4%ba%e6%b3%95" class="nav-大-o-表示法">
+									大 O 表示法
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ae%97%e6%b3%95%e5%a4%8d%e6%9d%82%e5%ba%a6" class="nav-算法复杂度">
+									算法复杂度
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac2%e7%ab%a0-%e9%80%89%e6%8b%a9%e6%8e%92%e5%ba%8f" class="nav-第2章-选择排序">
+									第2章 选择排序
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e4%b8%89%e7%ab%a0-%e9%80%92%e5%bd%92" class="nav-第三章-递归">
+									第三章 递归
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%ac%e5%9b%9b%e7%ab%a0-%e5%bf%ab%e9%80%9f%e6%8e%92%e5%ba%8f" class="nav-第四章-快速排序">
+									第四章 快速排序
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+
+<br>
+
+&copy;
+<a href="mailto:ethanli.engineer@gmail.com">Ethan</a>
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>
