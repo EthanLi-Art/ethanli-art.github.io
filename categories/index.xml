@@ -7,13 +7,27 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ethan</copyright>
-    <lastBuildDate>Wed, 17 Dec 2025 15:07:31 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 09:02:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Todo</title>
-      <link>http://localhost:1313/categories/todo/</link>
+      <title>Programming</title>
+      <link>http://localhost:1313/categories/programming/</link>
+      <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+      <guid>http://localhost:1313/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/categories/go/</link>
+      <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
+      <guid>http://localhost:1313/categories/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithms</title>
+      <link>http://localhost:1313/categories/algorithms/</link>
       <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
-      <guid>http://localhost:1313/categories/todo/</guid>
+      <guid>http://localhost:1313/categories/algorithms/</guid>
       <description></description>
     </item>
     <item>
@@ -28,13 +42,6 @@
       <link>http://localhost:1313/categories/algorithm/</link>
       <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
       <guid>http://localhost:1313/categories/algorithm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programming</title>
-      <link>http://localhost:1313/categories/programming/</link>
-      <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
-      <guid>http://localhost:1313/categories/programming/</guid>
       <description></description>
     </item>
     <item>

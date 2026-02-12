@@ -7,20 +7,48 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ethan</copyright>
-    <lastBuildDate>Wed, 17 Dec 2025 15:07:31 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 09:02:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Primer</title>
-      <link>http://localhost:1313/tags/primer/</link>
-      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
-      <guid>http://localhost:1313/tags/primer/</guid>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
-      <title>Todo</title>
-      <link>http://localhost:1313/tags/todo/</link>
+      <title>AI Agent</title>
+      <link>http://localhost:1313/tags/ai-agent/</link>
+      <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+      <guid>http://localhost:1313/tags/ai-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Course Notes</title>
+      <link>http://localhost:1313/tags/course-notes/</link>
+      <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+      <guid>http://localhost:1313/tags/course-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/tags/go/</link>
+      <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
+      <guid>http://localhost:1313/tags/go/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithms</title>
+      <link>http://localhost:1313/tags/algorithms/</link>
       <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
-      <guid>http://localhost:1313/tags/todo/</guid>
+      <guid>http://localhost:1313/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data-Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
       <description></description>
     </item>
     <item>
@@ -63,13 +91,6 @@
       <link>http://localhost:1313/tags/study-notes/</link>
       <pubDate>Sun, 30 Nov 2025 15:30:09 -0500</pubDate>
       <guid>http://localhost:1313/tags/study-notes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Course Notes</title>
-      <link>http://localhost:1313/tags/course-notes/</link>
-      <pubDate>Sun, 23 Nov 2025 16:39:14 -0500</pubDate>
-      <guid>http://localhost:1313/tags/course-notes/</guid>
       <description></description>
     </item>
     <item>

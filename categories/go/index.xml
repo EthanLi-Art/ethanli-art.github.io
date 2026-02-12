@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Ethan&#39;s Site</title>
+    <link>http://localhost:1313/categories/go/</link>
+    <description>Recent content in Go on Ethan&#39;s Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Ethan</copyright>
+    <lastBuildDate>Tue, 06 Jan 2026 17:03:35 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Go 语言项目开发实战》Learning Notes</title>
+      <link>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</link>
+      <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
+      <guid>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</guid>
+      <description>&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;开篇词-1讲&#34;&gt;开篇词 (1讲)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;开篇词--从-0-开始搭建一个企业级-go-应用&#34;&gt;开篇词 | 从 0 开始搭建一个企业级 Go 应用&lt;/h2&gt;&#xA;&lt;h3 id=&#34;云是大势所趋go-是云时代的语言&#34;&gt;“云”是大势所趋，Go 是云时代的语言&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;云目前是朝着云原生架构的方向演进的，云原生架构中具有统治力（影响力）的项目绝大部分又是用 Go 构建的&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h3 id=&#34;学习-go-项目开发面临的问题&#34;&gt;学习 Go 项目开发面临的问题&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;知识盲区&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;涉及的知识点很多&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;学不到最佳实践，能力提升有限&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;不知道如何完整地开发一个 Go 项目&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;学习知识点零碎，不体系、不全面、不深入&lt;/li&gt;&#xA;&lt;li&gt;不能把所有知识点有机结合成一个 Go 项目研发体系，真正开发的时候还是一团乱，效率也很低&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;缺乏一线项目练手，很难检验学习效果&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;需要学习一线大厂的大型项目构建和研发经验，来检验自己的学习成果&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;专栏的设计&#34;&gt;专栏的设计&lt;/h3&gt;&#xA;&lt;img src=&#34;https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.32ig4ddsk8.webp&#34; /&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;课前必学-3讲&#34;&gt;课前必学 (3讲)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;01--iam系统概述我们要实现什么样的-go-项目&#34;&gt;01 | IAM系统概述：我们要实现什么样的 Go 项目？&lt;/h2&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h2 id=&#34;02--环境准备如何安装和配置一个基本的-go-开发环境&#34;&gt;02 | 环境准备：如何安装和配置一个基本的 Go 开发环境？&lt;/h2&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h2 id=&#34;03--项目部署如何快速部署-iam-系统&#34;&gt;03 | 项目部署：如何快速部署 IAM 系统？&lt;/h2&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

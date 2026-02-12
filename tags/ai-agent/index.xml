@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Agent on Ethan&#39;s Site</title>
+    <link>http://localhost:1313/tags/ai-agent/</link>
+    <description>Recent content in AI Agent on Ethan&#39;s Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Ethan</copyright>
+    <lastBuildDate>Sun, 08 Feb 2026 09:02:38 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《Java转 AI高薪领域必备-从0到1打通生产级AI Agent开发》Course Notes</title>
+      <link>http://localhost:1313/posts/programming/ai-agent-development-course-notes/</link>
+      <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+      <guid>http://localhost:1313/posts/programming/ai-agent-development-course-notes/</guid>
+      <description>&lt;br/&gt;&#xD;&#xA;&lt;h1 id=&#34;导学&#34;&gt;导学&lt;/h1&gt;&#xA;&lt;h2 id=&#34;为何学习ai-agent&#34;&gt;为何学习AI Agent&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;行业趋势&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Al Agent爆发式增长，各大科技巨头都在全力投入Agent开发&lt;/li&gt;&#xA;&lt;li&gt;传统开发者的职业发展焦虑，Al Agent开发岗位薪资溢价较高&lt;/li&gt;&#xA;&lt;li&gt;技术栈自然延伸：Java作为企业级开发的主流语言，在Agent开发中依然占据重要地位。Spring Al等框架的出现，让Java开发者可以无缝转型到Al Agent开发领域&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;职业发展：打通高薪通道&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;薪资提升，AI Agent开发者平均薪资比传统开发高&lt;/li&gt;&#xA;&lt;li&gt;职业护城河，掌握Al Agent开发技能，保持技术竞争力，避免被AI替代&lt;/li&gt;&#xA;&lt;li&gt;职业路径拓宽，从传统开发工程师转型为AI Agent开发工程师，再到AI解决方案架构师，职业发展路径更加清晰&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h2 id=&#34;低代码平台遍地为何还要从零造轮子&#34;&gt;低代码平台遍地，为何还要从零造轮子?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;平台局限性&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dify 和 Coze 很棒，但它们更像是一个精美的”样板间“，而企业需要的是能承载复杂业务的“定制豪宅“&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;集成壁垒，难以复用&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平台现状：如何将平台开发的Agent，无缝集成到你公司现有的SpringBoot 用户认证、事务管理、日志监控体系中?过程往往非常笨重&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;功能边界，受制于人&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平台的节点和能力是预设好的。当你需要一个高度定制化的业务逻辑节点时(比如调用一个内部古老的 ERP 接口)，平台可能无法提供，或者实现起来非常别扭&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dify/Coze 的定位&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;是原型验证、快速演示、轻量级应用的绝佳选择。适合产品经理、运营或全栈开发者进行快速尝试&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h2 id=&#34;职业升维从工具使用者到架构创造者&#34;&gt;职业升维：从“工具使用者”到“架构创造者”&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;核心竞争力的分水岭&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;只会用平台:技能上限是“熟悉某个工具”，可替代性强。&lt;/li&gt;&#xA;&lt;li&gt;掌握 Graph:拥有“设计AI系统架构”的底层思维，这是架构师的核心能力，护城河极深&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;技术视野的降维打击&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;实战收获：通过亲手构建 Graph，你将透彻理解状态管理、节点编排、条件路由等 Agent 核心机制。&lt;/li&gt;&#xA;&lt;li&gt;长期价值：未来再评估任何AI平台，你都能一眼看穿其技术本质与局限性，做出权威技术决策。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;br/&gt;&#xD;&#xA;&lt;h2 id=&#34;为什么spring-al-alibaba-graph-是java生态的终极答案&#34;&gt;为什么Spring Al Alibaba Graph 是Java生态的“终极答案”?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;技术栈统一，心智负担极小&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;从 Controller到 Service，再到AI工作流，全程Java+Spring，无需在 Python 和 Java 间反复切换&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;企业级特性，开箱即用&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;天然继承 Spring 生态的安全、事务、监控、依赖注入，为AI工作流轻松添加权限控制、分布式事务链路追踪，满足企业生产级要求。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;可定制化开发&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -2,7 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/programming/ai-agent-development-course-notes/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai-agent/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/course-notes/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/programming/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-08T09:02:38-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</loc>
+    <lastmod>2026-01-06T17:03:35-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/go/</loc>
+    <lastmod>2026-01-06T17:03:35-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/go/</loc>
+    <lastmod>2026-01-06T17:03:35-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/categories/algorithms/</loc>
+    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/algorithms/</loc>
     <lastmod>2025-12-17T15:07:31-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -12,32 +77,7 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/primer/</loc>
-    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/todo/</loc>
-    <lastmod>2025-12-17T15:07:31-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/todo/</loc>
+    <loc>http://localhost:1313/tags/data-structures/</loc>
     <lastmod>2025-12-17T15:07:31-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
@@ -93,16 +133,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/programming/python3.8-course-notes/</loc>
-    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/tags/course-notes/</loc>
-    <lastmod>2025-11-23T16:39:14-05:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
     <lastmod>2025-11-23T16:39:14-05:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>

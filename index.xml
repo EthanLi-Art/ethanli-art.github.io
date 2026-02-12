@@ -7,9 +7,192 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Ethan</copyright>
-    <lastBuildDate>Wed, 17 Dec 2025 15:07:31 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 09:02:38 -0500</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+        <item>
+        <title>《Java转 AI高薪领域必备-从0到1打通生产级AI Agent开发》Course Notes</title>
+        <link>http://localhost:1313/posts/programming/ai-agent-development-course-notes/</link>
+        <pubDate>Sun, 08 Feb 2026 09:02:38 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/ai-agent-development-course-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/ai-agent-development-course-notes/ -&lt;br/&gt;
+&lt;h1 id=&#34;导学&#34;&gt;导学&lt;/h1&gt;
+&lt;h2 id=&#34;为何学习ai-agent&#34;&gt;为何学习AI Agent&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;行业趋势&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Al Agent爆发式增长，各大科技巨头都在全力投入Agent开发&lt;/li&gt;
+&lt;li&gt;传统开发者的职业发展焦虑，Al Agent开发岗位薪资溢价较高&lt;/li&gt;
+&lt;li&gt;技术栈自然延伸：Java作为企业级开发的主流语言，在Agent开发中依然占据重要地位。Spring Al等框架的出现，让Java开发者可以无缝转型到Al Agent开发领域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;职业发展：打通高薪通道&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;薪资提升，AI Agent开发者平均薪资比传统开发高&lt;/li&gt;
+&lt;li&gt;职业护城河，掌握Al Agent开发技能，保持技术竞争力，避免被AI替代&lt;/li&gt;
+&lt;li&gt;职业路径拓宽，从传统开发工程师转型为AI Agent开发工程师，再到AI解决方案架构师，职业发展路径更加清晰&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;低代码平台遍地为何还要从零造轮子&#34;&gt;低代码平台遍地，为何还要从零造轮子?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;平台局限性&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Dify 和 Coze 很棒，但它们更像是一个精美的”样板间“，而企业需要的是能承载复杂业务的“定制豪宅“&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;集成壁垒，难以复用&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;平台现状：如何将平台开发的Agent，无缝集成到你公司现有的SpringBoot 用户认证、事务管理、日志监控体系中?过程往往非常笨重&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;功能边界，受制于人&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;平台的节点和能力是预设好的。当你需要一个高度定制化的业务逻辑节点时(比如调用一个内部古老的 ERP 接口)，平台可能无法提供，或者实现起来非常别扭&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dify/Coze 的定位&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;是原型验证、快速演示、轻量级应用的绝佳选择。适合产品经理、运营或全栈开发者进行快速尝试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;职业升维从工具使用者到架构创造者&#34;&gt;职业升维：从“工具使用者”到“架构创造者”&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心竞争力的分水岭&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;只会用平台:技能上限是“熟悉某个工具”，可替代性强。&lt;/li&gt;
+&lt;li&gt;掌握 Graph:拥有“设计AI系统架构”的底层思维，这是架构师的核心能力，护城河极深&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;技术视野的降维打击&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;实战收获：通过亲手构建 Graph，你将透彻理解状态管理、节点编排、条件路由等 Agent 核心机制。&lt;/li&gt;
+&lt;li&gt;长期价值：未来再评估任何AI平台，你都能一眼看穿其技术本质与局限性，做出权威技术决策。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;为什么spring-al-alibaba-graph-是java生态的终极答案&#34;&gt;为什么Spring Al Alibaba Graph 是Java生态的“终极答案”?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;技术栈统一，心智负担极小&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从 Controller到 Service，再到AI工作流，全程Java+Spring，无需在 Python 和 Java 间反复切换&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;企业级特性，开箱即用&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;天然继承 Spring 生态的安全、事务、监控、依赖注入，为AI工作流轻松添加权限控制、分布式事务链路追踪，满足企业生产级要求。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;可定制化开发&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;企业级项目需求复杂，有很多系统要求高度的定制化，Spring Al Alibaba Graph 是可以简单快速的支持。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;spring-ai-alibaba-graph框架核心精讲&#34;&gt;Spring AI Alibaba Graph框架核心精讲&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.2-6的内容没有截图&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/programming/ai-agent-development-course-notes/ - Ethan</description>
+        </item>
+    
+    
+    
+        <item>
+        <title>《Go 语言项目开发实战》Learning Notes</title>
+        <link>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</link>
+        <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
+        
+        <guid>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</guid>
+        <description>Ethan&#39;s Site http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/ -&lt;br/&gt;
+&lt;h1 id=&#34;开篇词-1讲&#34;&gt;开篇词 (1讲)&lt;/h1&gt;
+&lt;h2 id=&#34;开篇词--从-0-开始搭建一个企业级-go-应用&#34;&gt;开篇词 | 从 0 开始搭建一个企业级 Go 应用&lt;/h2&gt;
+&lt;h3 id=&#34;云是大势所趋go-是云时代的语言&#34;&gt;“云”是大势所趋，Go 是云时代的语言&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;云目前是朝着云原生架构的方向演进的，云原生架构中具有统治力（影响力）的项目绝大部分又是用 Go 构建的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;h3 id=&#34;学习-go-项目开发面临的问题&#34;&gt;学习 Go 项目开发面临的问题&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;知识盲区&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;涉及的知识点很多&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;学不到最佳实践，能力提升有限&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不知道如何完整地开发一个 Go 项目&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;学习知识点零碎，不体系、不全面、不深入&lt;/li&gt;
+&lt;li&gt;不能把所有知识点有机结合成一个 Go 项目研发体系，真正开发的时候还是一团乱，效率也很低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缺乏一线项目练手，很难检验学习效果&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;需要学习一线大厂的大型项目构建和研发经验，来检验自己的学习成果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;专栏的设计&#34;&gt;专栏的设计&lt;/h3&gt;
+&lt;img src=&#34;https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.32ig4ddsk8.webp&#34; /&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;课前必学-3讲&#34;&gt;课前必学 (3讲)&lt;/h1&gt;
+&lt;h2 id=&#34;01--iam系统概述我们要实现什么样的-go-项目&#34;&gt;01 | IAM系统概述：我们要实现什么样的 Go 项目？&lt;/h2&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;02--环境准备如何安装和配置一个基本的-go-开发环境&#34;&gt;02 | 环境准备：如何安装和配置一个基本的 Go 开发环境？&lt;/h2&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;03--项目部署如何快速部署-iam-系统&#34;&gt;03 | 项目部署：如何快速部署 IAM 系统？&lt;/h2&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h1 id=&#34;remark&#34;&gt;remark&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&#39;&#39; width=&#39;70%&#39; /&gt;
+- http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/ - Ethan</description>
+        </item>
     
     
     
@@ -20,12 +203,139 @@
         
         <guid>http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/</guid>
         <description>Ethan&#39;s Site http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/ -&lt;br/&gt;
-# 概述
+&lt;h1 id=&#34;数据结构与算法学习概述&#34;&gt;数据结构与算法学习概述&lt;/h1&gt;
+&lt;h2 id=&#34;算法概述&#34;&gt;算法概述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;什么是算法：&lt;strong&gt;一系列解决问题的，清晰，可执行的计算机指令&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;算法的特点：
+&lt;ul&gt;
+&lt;li&gt;有限性&lt;/li&gt;
+&lt;li&gt;确定性：不会产生二义性&lt;/li&gt;
+&lt;li&gt;可行性&lt;/li&gt;
+&lt;li&gt;输入&lt;/li&gt;
+&lt;li&gt;输出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;h2 id=&#34;学习内容概述&#34;&gt;学习内容概述&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;学习的主要内容
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;十大排序算法&lt;/strong&gt;：插入，冒泡，选择，希尔，快速，归并，堆排序，计数排序，桶排序，基数排序&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;查找算法&lt;/strong&gt;：线性查找，二分查找&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;线性数据结构&lt;/strong&gt;：动态数组，链表，栈，队列，哈希表&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;经典树结构&lt;/strong&gt;：二分搜索树，堆，AVL，红黑树，B 类树&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;高级数据结构&lt;/strong&gt;：线段树，并查集，Trie，SQRT 分解&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;字符串算法&lt;/strong&gt;：KMP，模式匹配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;通过学习算法与数据结构的内容，同时也深刻理解计算机科学&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;二分查找：
+&lt;ul&gt;
+&lt;li&gt;如何编写正确的程序&lt;/li&gt;
+&lt;li&gt;边界&lt;/li&gt;
+&lt;li&gt;处理整数和浮点数的区别&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;快速排序，归并排序，链表，树结构：
+&lt;ul&gt;
+&lt;li&gt;递归&lt;/li&gt;
+&lt;li&gt;算法的优化过程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;快速排序
+&lt;ul&gt;
+&lt;li&gt;随机算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;哈希表，RK 算法
+&lt;ul&gt;
+&lt;li&gt;哈希&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;桶排序，aqrt 分解
+&lt;ul&gt;
+&lt;li&gt;分块&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;线段树，sqrt 分解
+&lt;ul&gt;
+&lt;li&gt;区间估计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;希尔排序
+&lt;ul&gt;
+&lt;li&gt;没有固定写法的算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KMP
+&lt;ul&gt;
+&lt;li&gt;确定有限状态自动机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;B 树
+&lt;ul&gt;
+&lt;li&gt;内存和外存考量的不同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;br/&gt;
 &lt;br/&gt;
 &lt;br/&gt;
-&lt;h1 id=&#34;第x章&#34;&gt;第X章&lt;/h1&gt;
-&lt;br/&gt;
+&lt;h1 id=&#34;linear-search&#34;&gt;Linear Search&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#859900&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#859900&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;LinearSearch&lt;/span&gt;&amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;E&lt;/span&gt;&amp;gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;LinearSearch&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#859900&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#859900&#34;&gt;static&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#268bd2&#34;&gt;E&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;search&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;E&lt;/span&gt; [] &lt;span style=&#34;color:#268bd2&#34;&gt;data&lt;/span&gt;,&lt;span style=&#34;color:#268bd2&#34;&gt;E&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;target&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;=&lt;span style=&#34;color:#268bd2&#34;&gt;0&lt;/span&gt;;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;&amp;lt;  &lt;span style=&#34;color:#268bd2&#34;&gt;data&lt;/span&gt;.&lt;span style=&#34;color:#268bd2&#34;&gt;length&lt;/span&gt;;&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;++) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#859900&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#268bd2&#34;&gt;data&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;].&lt;span style=&#34;color:#268bd2&#34;&gt;equals&lt;/span&gt;(&lt;span style=&#34;color:#268bd2&#34;&gt;target&lt;/span&gt;)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; -&lt;span style=&#34;color:#268bd2&#34;&gt;1&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Go&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#dc322f;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;LinearSearch
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;-------------
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;泛型线性查找
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;T 必须是 comparable（支持 == 比较）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#93a1a1;font-style:italic&#34;&gt;*/&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#859900&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;LinearSearch&lt;/span&gt;[&lt;span style=&#34;color:#268bd2&#34;&gt;T&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;comparable&lt;/span&gt;](&lt;span style=&#34;color:#268bd2&#34;&gt;data&lt;/span&gt; []&lt;span style=&#34;color:#268bd2&#34;&gt;T&lt;/span&gt;, &lt;span style=&#34;color:#268bd2&#34;&gt;target&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;T&lt;/span&gt;) &lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;int&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#859900&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;, &lt;span style=&#34;color:#268bd2&#34;&gt;v&lt;/span&gt; := &lt;span style=&#34;color:#859900&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;data&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		&lt;span style=&#34;color:#859900&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;v&lt;/span&gt; == &lt;span style=&#34;color:#268bd2&#34;&gt;target&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;			&lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;i&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;		}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#859900&#34;&gt;return&lt;/span&gt; -&lt;span style=&#34;color:#2aa198;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#859900&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;Student&lt;/span&gt; &lt;span style=&#34;color:#859900&#34;&gt;struct&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#268bd2&#34;&gt;Name&lt;/span&gt; &lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;string&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#268bd2&#34;&gt;Age&lt;/span&gt;  &lt;span style=&#34;color:#859900;font-weight:bold&#34;&gt;int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br/&gt;
 &lt;br/&gt;
 &lt;br/&gt;
 &lt;h1 id=&#34;reference&#34;&gt;Reference&lt;/h1&gt;

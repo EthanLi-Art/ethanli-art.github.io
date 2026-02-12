@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>Data Structures and Algorithms Learning Notes</title>
+<title>《Go 语言项目开发实战》Learning Notes</title>
 
 
 
@@ -10,23 +10,22 @@
 <meta name="google-site-verification" content="G-XXXXXXXXXX">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="Data Structures and Algorithms Learning Notes">
+<meta name="description" content="Article Description">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:url" content="http://localhost:1313/posts/programming/data-structures-and-algorithms-learning-notes/">
+<meta property="og:url" content="http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/">
   <meta property="og:site_name" content="Ethan&#39;s Site">
-  <meta property="og:title" content="Data Structures and Algorithms Learning Notes">
-  <meta property="og:description" content="Data Structures and Algorithms Learning Notes">
+  <meta property="og:title" content="《Go 语言项目开发实战》Learning Notes">
+  <meta property="og:description" content="Article Description">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-12-17T15:07:31-05:00">
-    <meta property="article:modified_time" content="2025-12-17T15:07:31-05:00">
-    <meta property="article:tag" content="Algorithms">
-    <meta property="article:tag" content="Data-Structures">
+    <meta property="article:published_time" content="2026-01-06T17:03:35-05:00">
+    <meta property="article:modified_time" content="2026-01-06T17:03:35-05:00">
+    <meta property="article:tag" content="Go">
 
 
 
@@ -34,8 +33,8 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Data Structures and Algorithms Learning Notes">
-  <meta name="twitter:description" content="Data Structures and Algorithms Learning Notes">
+  <meta name="twitter:title" content="《Go 语言项目开发实战》Learning Notes">
+  <meta name="twitter:description" content="Article Description">
 
 
 
@@ -224,37 +223,34 @@
                 
                     
                     
-                    style="background-image: url('https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.3uvatf0uui.webp')"
+                    style="background-image: url('http://localhost:1313/images/notebook.jpg')"
                     
                 
             >
                 <div class="post-title">
-                    Data Structures and Algorithms Learning Notes
+                    《Go 语言项目开发实战》Learning Notes
                     
                     <div class="post-subtitle">
-                        Data Structures and Algorithms Learning Notes
+                        Article Description
                     </div>
                     
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2025-12-17 15:07
+                            2026-01-06 17:03
                         </time>
                         
 
                         
                             <i class="material-icons" style="">folder</i>
-                                <a href="/categories/algorithms">algorithms</a>
+                                <a href="/categories/go">go</a>
                                 &nbsp;
                         
 
                         
                             <i class="material-icons" style="">label</i>
                             
-                                <a href="/tags/algorithms">algorithms</a>
-                                &nbsp;
-                            
-                                <a href="/tags/data-structures">data-structures</a>
+                                <a href="/tags/go">go</a>
                                 &nbsp;
                             
                         
@@ -268,139 +264,51 @@
                 <div class="post-body" v-pre>
                 
                     <br/>
-<h1 id="数据结构与算法学习概述">数据结构与算法学习概述</h1>
-<h2 id="算法概述">算法概述</h2>
+<h1 id="开篇词-1讲">开篇词 (1讲)</h1>
+<h2 id="开篇词--从-0-开始搭建一个企业级-go-应用">开篇词 | 从 0 开始搭建一个企业级 Go 应用</h2>
+<h3 id="云是大势所趋go-是云时代的语言">“云”是大势所趋，Go 是云时代的语言</h3>
 <ul>
-<li>什么是算法：<strong>一系列解决问题的，清晰，可执行的计算机指令</strong></li>
-<li>算法的特点：
-<ul>
-<li>有限性</li>
-<li>确定性：不会产生二义性</li>
-<li>可行性</li>
-<li>输入</li>
-<li>输出</li>
-</ul>
-</li>
+<li>云目前是朝着云原生架构的方向演进的，云原生架构中具有统治力（影响力）的项目绝大部分又是用 Go 构建的</li>
 </ul>
 <br/>
-<br/>
-<h2 id="学习内容概述">学习内容概述</h2>
+<h3 id="学习-go-项目开发面临的问题">学习 Go 项目开发面临的问题</h3>
 <ul>
-<li>学习的主要内容
+<li><strong>知识盲区</strong>
 <ul>
-<li><strong>十大排序算法</strong>：插入，冒泡，选择，希尔，快速，归并，堆排序，计数排序，桶排序，基数排序</li>
-<li><strong>查找算法</strong>：线性查找，二分查找</li>
-<li><strong>线性数据结构</strong>：动态数组，链表，栈，队列，哈希表</li>
-<li><strong>经典树结构</strong>：二分搜索树，堆，AVL，红黑树，B 类树</li>
-<li><strong>高级数据结构</strong>：线段树，并查集，Trie，SQRT 分解</li>
-<li><strong>字符串算法</strong>：KMP，模式匹配</li>
+<li>涉及的知识点很多</li>
+</ul>
+</li>
+<li><strong>学不到最佳实践，能力提升有限</strong></li>
+<li><strong>不知道如何完整地开发一个 Go 项目</strong>
+<ul>
+<li>学习知识点零碎，不体系、不全面、不深入</li>
+<li>不能把所有知识点有机结合成一个 Go 项目研发体系，真正开发的时候还是一团乱，效率也很低</li>
+</ul>
+</li>
+<li><strong>缺乏一线项目练手，很难检验学习效果</strong>
+<ul>
+<li>需要学习一线大厂的大型项目构建和研发经验，来检验自己的学习成果</li>
 </ul>
 </li>
 </ul>
-<br/>
-<ul>
-<li><strong>通过学习算法与数据结构的内容，同时也深刻理解计算机科学</strong>
-<ul>
-<li>二分查找：
-<ul>
-<li>如何编写正确的程序</li>
-<li>边界</li>
-<li>处理整数和浮点数的区别</li>
-</ul>
-</li>
-<li>快速排序，归并排序，链表，树结构：
-<ul>
-<li>递归</li>
-<li>算法的优化过程</li>
-</ul>
-</li>
-<li>快速排序
-<ul>
-<li>随机算法</li>
-</ul>
-</li>
-<li>哈希表，RK 算法
-<ul>
-<li>哈希</li>
-</ul>
-</li>
-<li>桶排序，aqrt 分解
-<ul>
-<li>分块</li>
-</ul>
-</li>
-<li>线段树，sqrt 分解
-<ul>
-<li>区间估计</li>
-</ul>
-</li>
-<li>希尔排序
-<ul>
-<li>没有固定写法的算法</li>
-</ul>
-</li>
-<li>KMP
-<ul>
-<li>确定有限状态自动机</li>
-</ul>
-</li>
-<li>B 树
-<ul>
-<li>内存和外存考量的不同</li>
-</ul>
-</li>
-<li>&hellip;</li>
-</ul>
-</li>
-</ul>
+<h3 id="专栏的设计">专栏的设计</h3>
+<img src="https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.32ig4ddsk8.webp" />
 <br/>
 <br/>
 <br/>
-<h1 id="linear-search">Linear Search</h1>
-<ul>
-<li>Java</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#859900">public</span> <span style="color:#859900">class</span> <span style="color:#cb4b16">LinearSearch</span>&lt;<span style="color:#268bd2">E</span>&gt; {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#859900">private</span> <span style="color:#268bd2">LinearSearch</span>() {
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#859900">public</span> <span style="color:#859900">static</span> &lt;<span style="color:#268bd2">E</span>&gt; <span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">search</span>(<span style="color:#268bd2">E</span> [] <span style="color:#268bd2">data</span>,<span style="color:#268bd2">E</span> <span style="color:#268bd2">target</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#859900">for</span> (<span style="color:#859900;font-weight:bold">int</span> <span style="color:#268bd2">i</span>=<span style="color:#268bd2">0</span>;<span style="color:#268bd2">i</span>&lt;  <span style="color:#268bd2">data</span>.<span style="color:#268bd2">length</span>;<span style="color:#268bd2">i</span>++) {
-</span></span><span style="display:flex;"><span>            <span style="color:#859900">if</span> (<span style="color:#268bd2">data</span>[<span style="color:#268bd2">i</span>].<span style="color:#268bd2">equals</span>(<span style="color:#268bd2">target</span>)) {
-</span></span><span style="display:flex;"><span>                <span style="color:#859900">return</span> <span style="color:#268bd2">i</span>;
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        <span style="color:#859900">return</span> -<span style="color:#268bd2">1</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ul>
-<li>Go</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#dc322f;font-weight:bold">import</span> <span style="color:#2aa198">&#34;fmt&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">/*
-</span></span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">LinearSearch
-</span></span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">-------------
-</span></span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">泛型线性查找
-</span></span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">T 必须是 comparable（支持 == 比较）
-</span></span></span><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic">*/</span>
-</span></span><span style="display:flex;"><span><span style="color:#859900">func</span> <span style="color:#268bd2">LinearSearch</span>[<span style="color:#268bd2">T</span> <span style="color:#268bd2">comparable</span>](<span style="color:#268bd2">data</span> []<span style="color:#268bd2">T</span>, <span style="color:#268bd2">target</span> <span style="color:#268bd2">T</span>) <span style="color:#859900;font-weight:bold">int</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#859900">for</span> <span style="color:#268bd2">i</span>, <span style="color:#268bd2">v</span> := <span style="color:#859900">range</span> <span style="color:#268bd2">data</span> {
-</span></span><span style="display:flex;"><span>		<span style="color:#859900">if</span> <span style="color:#268bd2">v</span> == <span style="color:#268bd2">target</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#859900">return</span> <span style="color:#268bd2">i</span>
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	<span style="color:#859900">return</span> -<span style="color:#2aa198;font-weight:bold">1</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#859900">type</span> <span style="color:#268bd2">Student</span> <span style="color:#859900">struct</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#268bd2">Name</span> <span style="color:#859900;font-weight:bold">string</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#268bd2">Age</span>  <span style="color:#859900;font-weight:bold">int</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><br/>
+<h1 id="课前必学-3讲">课前必学 (3讲)</h1>
+<h2 id="01--iam系统概述我们要实现什么样的-go-项目">01 | IAM系统概述：我们要实现什么样的 Go 项目？</h2>
+<br/>
+<br/>
+<h2 id="02--环境准备如何安装和配置一个基本的-go-开发环境">02 | 环境准备：如何安装和配置一个基本的 Go 开发环境？</h2>
+<br/>
+<br/>
+<h2 id="03--项目部署如何快速部署-iam-系统">03 | 项目部署：如何快速部署 IAM 系统？</h2>
+<br/>
+<br/>
+<br/>
+<h1 id="第x章">第X章</h1>
+<br/>
 <br/>
 <br/>
 <h1 id="reference">Reference</h1>
@@ -415,7 +323,7 @@
 
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">最后修改于 2025-12-17</p>
+		    <p style="color:#777;">最后修改于 2026-01-06</p>
                     
                 </div>
             </div>
@@ -427,34 +335,10 @@
             </nav>
             <div class="post-comment-wrapper">
                 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="EthanLi-Art/giscus"
-        data-repo-id="R_kgDOQZr0Tg"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOQZr0Ts4CyAn5"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
-
+                <p style="opacity: 0.6" align="center">
+                    <small></small>
+                </p>
+                
             </div>
         </div>
     </div>
@@ -558,8 +442,8 @@
 						
 						
 							<li>
-								<a href="#%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e4%b8%8e%e7%ae%97%e6%b3%95%e5%ad%a6%e4%b9%a0%e6%a6%82%e8%bf%b0" class="nav-数据结构与算法学习概述">
-									数据结构与算法学习概述
+								<a href="#%e5%bc%80%e7%af%87%e8%af%8d-1%e8%ae%b2" class="nav-开篇词-1讲">
+									开篇词 (1讲)
 								</a>
 							</li>
 						
@@ -582,8 +466,32 @@
 						
 						
 							<li>
-								<a href="#%e7%ae%97%e6%b3%95%e6%a6%82%e8%bf%b0" class="nav-算法概述">
-									算法概述
+								<a href="#%e5%bc%80%e7%af%87%e8%af%8d--%e4%bb%8e-0-%e5%bc%80%e5%a7%8b%e6%90%ad%e5%bb%ba%e4%b8%80%e4%b8%aa%e4%bc%81%e4%b8%9a%e7%ba%a7-go-%e5%ba%94%e7%94%a8" class="nav-开篇词--从-0-开始搭建一个企业级-go-应用">
+									开篇词 | 从 0 开始搭建一个企业级 Go 应用
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#%e4%ba%91%e6%98%af%e5%a4%a7%e5%8a%bf%e6%89%80%e8%b6%8bgo-%e6%98%af%e4%ba%91%e6%97%b6%e4%bb%a3%e7%9a%84%e8%af%ad%e8%a8%80" class="nav-云是大势所趋go-是云时代的语言">
+									“云”是大势所趋，Go 是云时代的语言
 								</a>
 							</li>
 						
@@ -600,8 +508,110 @@
 						
 						
 							<li>
-								<a href="#%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9%e6%a6%82%e8%bf%b0" class="nav-学习内容概述">
-									学习内容概述
+								<a href="#%e5%ad%a6%e4%b9%a0-go-%e9%a1%b9%e7%9b%ae%e5%bc%80%e5%8f%91%e9%9d%a2%e4%b8%b4%e7%9a%84%e9%97%ae%e9%a2%98" class="nav-学习-go-项目开发面临的问题">
+									学习 Go 项目开发面临的问题
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%93%e6%a0%8f%e7%9a%84%e8%ae%be%e8%ae%a1" class="nav-专栏的设计">
+									专栏的设计
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e8%af%be%e5%89%8d%e5%bf%85%e5%ad%a6-3%e8%ae%b2" class="nav-课前必学-3讲">
+									课前必学 (3讲)
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#01--iam%e7%b3%bb%e7%bb%9f%e6%a6%82%e8%bf%b0%e6%88%91%e4%bb%ac%e8%a6%81%e5%ae%9e%e7%8e%b0%e4%bb%80%e4%b9%88%e6%a0%b7%e7%9a%84-go-%e9%a1%b9%e7%9b%ae" class="nav-01--iam系统概述我们要实现什么样的-go-项目">
+									01 | IAM系统概述：我们要实现什么样的 Go 项目？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#02--%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85%e5%92%8c%e9%85%8d%e7%bd%ae%e4%b8%80%e4%b8%aa%e5%9f%ba%e6%9c%ac%e7%9a%84-go-%e5%bc%80%e5%8f%91%e7%8e%af%e5%a2%83" class="nav-02--环境准备如何安装和配置一个基本的-go-开发环境">
+									02 | 环境准备：如何安装和配置一个基本的 Go 开发环境？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#03--%e9%a1%b9%e7%9b%ae%e9%83%a8%e7%bd%b2%e5%a6%82%e4%bd%95%e5%bf%ab%e9%80%9f%e9%83%a8%e7%bd%b2-iam-%e7%b3%bb%e7%bb%9f" class="nav-03--项目部署如何快速部署-iam-系统">
+									03 | 项目部署：如何快速部署 IAM 系统？
 								</a>
 							</li>
 						
@@ -622,8 +632,8 @@
 						
 						
 							<li>
-								<a href="#linear-search" class="nav-linear-search">
-									Linear Search
+								<a href="#%e7%ac%acx%e7%ab%a0" class="nav-第x章">
+									第X章
 								</a>
 							</li>
 						
