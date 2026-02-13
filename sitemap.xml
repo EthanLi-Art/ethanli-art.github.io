@@ -47,6 +47,21 @@
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/categories/thinking/</loc>
+    <lastmod>2026-02-07T11:54:10-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/thinking/</loc>
+    <lastmod>2026-02-07T11:54:10-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/posts/thinking-notes/glimmer-and-echo/</loc>
+    <lastmod>2026-02-07T11:54:10-05:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/posts/programming/go-language-project-development-practice-learning-notes/</loc>
     <lastmod>2026-01-06T17:03:35-05:00</lastmod>
     <changefreq>always</changefreq>

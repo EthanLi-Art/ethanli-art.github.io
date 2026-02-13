@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-<title>VirtualBox 配置双网卡并固定 IP</title>
+<title>微光与回声</title>
 
 
 
@@ -10,24 +10,22 @@
 <meta name="google-site-verification" content="G-XXXXXXXXXX">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="详细讲解如何在 VirtualBox 中配置双网卡（NAT &#43; Host-Only），并为虚拟机设置静态 IP">
+<meta name="description" content="语言是微光，感悟是回声，每一次感悟都是自我重塑。思考永远在路上！">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
 
 
-<meta property="og:url" content="http://localhost:1313/posts/programming/virtualbox-dual-nic-static-ip/">
+<meta property="og:url" content="http://localhost:1313/posts/thinking-notes/glimmer-and-echo/">
   <meta property="og:site_name" content="Ethan&#39;s Site">
-  <meta property="og:title" content="VirtualBox 配置双网卡并固定 IP">
-  <meta property="og:description" content="详细讲解如何在 VirtualBox 中配置双网卡（NAT &#43; Host-Only），并为虚拟机设置静态 IP">
+  <meta property="og:title" content="微光与回声">
+  <meta property="og:description" content="语言是微光，感悟是回声，每一次感悟都是自我重塑。思考永远在路上！">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2020-11-20T19:32:25-05:00">
-    <meta property="article:modified_time" content="2020-11-20T19:32:25-05:00">
-    <meta property="article:tag" content="Linux">
-    <meta property="article:tag" content="Network">
-    <meta property="article:tag" content="Virtualbox">
+    <meta property="article:published_time" content="2026-02-07T11:54:10-05:00">
+    <meta property="article:modified_time" content="2026-02-07T11:54:10-05:00">
+    <meta property="article:tag" content="Thinking">
 
 
 
@@ -35,8 +33,8 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="VirtualBox 配置双网卡并固定 IP">
-  <meta name="twitter:description" content="详细讲解如何在 VirtualBox 中配置双网卡（NAT &#43; Host-Only），并为虚拟机设置静态 IP">
+  <meta name="twitter:title" content="微光与回声">
+  <meta name="twitter:description" content="语言是微光，感悟是回声，每一次感悟都是自我重塑。思考永远在路上！">
 
 
 
@@ -225,40 +223,34 @@
                 
                     
                     
-                    style="background-image: url('http://localhost:1313/images/programming/virtualbox-dual-nic-static-ip.webp')"
+                    style="background-image: url('https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.51eob9jlp4.webp')"
                     
                 
             >
                 <div class="post-title">
-                    VirtualBox 配置双网卡并固定 IP
+                    微光与回声
                     
                     <div class="post-subtitle">
-                        详细讲解如何在 VirtualBox 中配置双网卡（NAT &#43; Host-Only），并为虚拟机设置静态 IP
+                        语言是微光，感悟是回声，每一次感悟都是自我重塑。思考永远在路上！
                     </div>
                     
                     <div class="post-meta">
                         
                         <time itemprop="datePublished">
-                            2020-11-20 19:32
+                            2026-02-07 11:54
                         </time>
                         
 
                         
                             <i class="material-icons" style="">folder</i>
-                                <a href="/categories/programming">programming</a>
+                                <a href="/categories/thinking">thinking</a>
                                 &nbsp;
                         
 
                         
                             <i class="material-icons" style="">label</i>
                             
-                                <a href="/tags/linux">linux</a>
-                                &nbsp;
-                            
-                                <a href="/tags/network">network</a>
-                                &nbsp;
-                            
-                                <a href="/tags/virtualbox">virtualbox</a>
+                                <a href="/tags/thinking">thinking</a>
                                 &nbsp;
                             
                         
@@ -272,57 +264,125 @@
                 <div class="post-body" v-pre>
                 
                     <br/>
-<h1 id="操作概述">操作概述</h1>
-<h2 id="虚拟机环境">虚拟机环境</h2>
 <ul>
-<li>CentOS7</li>
+<li>一切深奥的推理都伴有一种不便，就是:它可以使 论敌哑口无言，而不能使他信服，而且它需要我们 作出最初发明它时所需要的那种刻苦钻研，才能使 我们感到它的力量。当我们离开了小房间、置身于 日常生活事务中时，我们推理所得的结论似乎就烟 消云散，正如夜间的幽灵在曙光到来时消失去一 样;而且我们甚至难以保留住我们费了辛苦才获得 的那种信念。</li>
 </ul>
-<br/>
-<br/>
-<h2 id="开启双网卡">开启双网卡</h2>
-<center>
-<p><img src="https://github.com/ErnestoIgnacio/picx-images-hosting/raw/master/ErnestoIgnacioBlog/image.1ap9wfz19z.webp" alt=""></p>
-</center>
-<br/>
-<img src='https://github.com/ErnestoIgnacio/picx-images-hosting/raw/master/ErnestoIgnacioBlog/image.8adjecawek.webp' width='100%' />
-<br/>
-<br/>
-<h2 id="查看虚拟机的服务器地址">查看虚拟机的服务器地址</h2>
+<blockquote>
 <ul>
-<li>安装虚拟机后需要重启一次才可以看到</li>
+<li>现代白话改写版本</li>
 </ul>
-<img src='https://github.com/ErnestoIgnacio/picx-images-hosting/raw/master/ErnestoIgnacioBlog/image.361up2cmok.webp' width='100%' />
+<p>一切深刻的推理都有一个麻烦：</p>
+<p>它能让反对者说不出话，却未必让他真正相信。</p>
+<p>它的力量，只在我们像最初发现它时那样专注思考时才显现。</p>
+<p>一旦离开书房，回到日常生活的琐碎事务中，那些严密推导出来的结论，就仿佛在晨光中消散的夜间幽影。</p>
+<p>我们甚至难以保存住那种来之不易的确信。</p>
+</blockquote>
+<blockquote>
+<h1 id="一从心理学角度为什么信念会消散">一、从心理学角度：为什么信念会消散？</h1>
+<p>这不是意志薄弱，而是人类大脑的结构决定的。</p>
+<h3 id="1-情境依赖效应context-dependent-cognition">1️⃣ 情境依赖效应（Context-dependent cognition）</h3>
+<p>思想不是抽象存在的，它依赖“情境”。</p>
+<ul>
+<li>安静房间 → 深度思考模式</li>
+<li>日常事务 → 任务执行模式</li>
+</ul>
+<p>当情境切换，大脑的神经网络也在切换。</p>
+<p>所以：</p>
+<blockquote>
+<p>不是信念消失，而是调用它的“通道”关闭了。</p>
+</blockquote>
+<hr>
+<h3 id="2-系统一-vs-系统二卡尼曼理论">2️⃣ 系统一 vs 系统二（卡尼曼理论）</h3>
+<ul>
+<li>系统二：缓慢、逻辑、深思熟虑</li>
+<li>系统一：快速、直觉、习惯驱动</li>
+</ul>
+<p>书房里的推理 = 系统二在工作
+日常生活 = 系统一主导</p>
+<p>而系统一的力量远远大于系统二。</p>
+<p>这就是为什么：
+你可以“知道”，却无法“活出”。</p>
+<hr>
+<h3 id="3-认知能量消耗">3️⃣ 认知能量消耗</h3>
+<p>深度推理极其耗能。</p>
+<p>大脑天生倾向于节能。
+所以它会自动回到“习惯模式”。</p>
+<p>信念需要能量维持，
+而生活在不断抽走你的能量。</p>
+<hr>
+<h1 id="二怎样让思想真正长在你身上">二、怎样让思想真正“长在你身上”？</h1>
+<p>这是关键。</p>
+<p>推理只是第一步。
+要让思想不消散，需要三种转化。</p>
+<hr>
+<h2 id="-把推理转化为语言">① 把推理转化为语言</h2>
+<p>写下来。</p>
+<p>但不是摘抄，而是用你自己的话重写。</p>
+<p>当你能不用原句复述，
+它才开始属于你。</p>
+<hr>
+<h2 id="-把思想转化为选择">② 把思想转化为选择</h2>
+<p>每个深刻思想，都要对应一个生活动作。</p>
+<p>比如：</p>
+<ul>
+<li>如果你相信“理性有限”
+→ 你是否在争论中变得更宽容？</li>
+<li>如果你相信“生命短暂”
+→ 你是否减少拖延？</li>
+</ul>
+<p>思想必须进入行为，
+否则只是书房里的幽灵。</p>
+<hr>
+<h2 id="-重复暴露">③ 重复暴露</h2>
+<p>伟大思想不是一次理解完成的。</p>
+<p>它需要周期性回访。</p>
+<p>像肌肉一样。</p>
+<p>你现在读哲学，
+不是为了获得“一个结论”，
+而是训练思维结构。</p>
+<hr>
+<h1 id="三回到你自己">三、回到你自己</h1>
+<p>你为什么对这段话有感觉？</p>
+<p>通常会有三种可能：</p>
+<h3 id="1-你体验过思想消散的挫败">1️⃣ 你体验过“思想消散”的挫败</h3>
+<p>读时震撼，
+过几天却模糊。</p>
+<p>这是一种失落感。</p>
+<hr>
+<h3 id="2-你在思考理性的极限">2️⃣ 你在思考“理性的极限”</h3>
+<p>你可能已经意识到：</p>
+<p>纯逻辑并不能改变世界。</p>
+<p>这是一种成熟的怀疑。</p>
+<hr>
+<h3 id="3-你开始进入更高层次的思考">3️⃣ 你开始进入更高层次的思考</h3>
+<p>当一个人开始思考：</p>
+<blockquote>
+<p>为什么我的信念不稳定？</p>
+</blockquote>
+<p>说明他已经不满足于知识，
+而在追问“存在”。</p>
+<p>这是哲学真正的开始。</p>
+</blockquote>
 <br/>
-<img src='https://github.com/ErnestoIgnacio/picx-images-hosting/raw/master/ErnestoIgnacioBlog/image.73u85qnuil.webp' width='100%' />
 <br/>
 <br/>
-<h2 id="设置固定ip">设置固定IP</h2>
-<div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vim /etc/sysconfig/network-scripts/ifcfg-enp0s3
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#268bd2">TYPE</span>=Ethernet
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">PROXY_METHOD</span>=none
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">BROWSER_ONLY</span>=no
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">BOOTPROTO</span>=static <span style="color:#93a1a1;font-style:italic"># 设置静态IP</span>
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">DEFROUTE</span>=yes
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV4_FAILURE_FATAL</span>=no
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV6INIT</span>=yes
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV6_AUTOCONF</span>=yes
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV6_DEFROUTE</span>=yes
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV6_FAILURE_FATAL</span>=no
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPV6_ADDR_GEN_MODE</span>=stable-privacy
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">NAME</span>=enp0s3
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">UUID</span>=9f9e8d3b-a7ad-450a-a6c8-9973fd57ebb7
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">DEVICE</span>=enp0s3
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">ONBOOT</span>=yes <span style="color:#93a1a1;font-style:italic"># 设置yes</span>
-</span></span><span style="display:flex;"><span><span style="color:#268bd2">IPADDR</span>=192.168.56.110 <span style="color:#93a1a1;font-style:italic"># 设置固定的ip地址</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#586e75;background-color:#eee8d5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#93a1a1;font-style:italic"># 重启网络，使得配置生效</span>
-</span></span><span style="display:flex;"><span>systemctl restart network
-</span></span></code></pre></div><br/>
+<h1 id="第x章">第X章</h1>
 <br/>
 <br/>
+<br/>
+<h1 id="reference">Reference</h1>
+<br/>
+<br/>
+<br/>
+<h1 id="remark">remark</h1>
+<blockquote>
+<p>1.</p>
+</blockquote>
+<img src='' width='70%' />
 
                     
                     <HR width="100%" id="EOF">
-		    <p style="color:#777;">最后修改于 2020-11-20</p>
+		    <p style="color:#777;">最后修改于 2026-02-07</p>
                     
                 </div>
             </div>
@@ -334,34 +394,10 @@
             </nav>
             <div class="post-comment-wrapper">
                 
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="EthanLi-Art/giscus"
-        data-repo-id="R_kgDOQZr0Tg"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOQZr0Ts4CyAn5"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
-
+                <p style="opacity: 0.6" align="center">
+                    <small></small>
+                </p>
+                
             </div>
         </div>
     </div>
@@ -465,8 +501,96 @@
 						
 						
 							<li>
-								<a href="#%e6%93%8d%e4%bd%9c%e6%a6%82%e8%bf%b0" class="nav-操作概述">
-									操作概述
+								<a href="#%e4%b8%80%e4%bb%8e%e5%bf%83%e7%90%86%e5%ad%a6%e8%a7%92%e5%ba%a6%e4%b8%ba%e4%bb%80%e4%b9%88%e4%bf%a1%e5%bf%b5%e4%bc%9a%e6%b6%88%e6%95%a3" class="nav-一从心理学角度为什么信念会消散">
+									一、从心理学角度：为什么信念会消散？
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1-%e6%83%85%e5%a2%83%e4%be%9d%e8%b5%96%e6%95%88%e5%ba%94context-dependent-cognition" class="nav-1-情境依赖效应context-dependent-cognition">
+									1️⃣ 情境依赖效应（Context-dependent cognition）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#2-%e7%b3%bb%e7%bb%9f%e4%b8%80-vs-%e7%b3%bb%e7%bb%9f%e4%ba%8c%e5%8d%a1%e5%b0%bc%e6%9b%bc%e7%90%86%e8%ae%ba" class="nav-2-系统一-vs-系统二卡尼曼理论">
+									2️⃣ 系统一 vs 系统二（卡尼曼理论）
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-%e8%ae%a4%e7%9f%a5%e8%83%bd%e9%87%8f%e6%b6%88%e8%80%97" class="nav-3-认知能量消耗">
+									3️⃣ 认知能量消耗
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%ba%8c%e6%80%8e%e6%a0%b7%e8%ae%a9%e6%80%9d%e6%83%b3%e7%9c%9f%e6%ad%a3%e9%95%bf%e5%9c%a8%e4%bd%a0%e8%ba%ab%e4%b8%8a" class="nav-二怎样让思想真正长在你身上">
+									二、怎样让思想真正“长在你身上”？
 								</a>
 							</li>
 						
@@ -489,8 +613,8 @@
 						
 						
 							<li>
-								<a href="#%e8%99%9a%e6%8b%9f%e6%9c%ba%e7%8e%af%e5%a2%83" class="nav-虚拟机环境">
-									虚拟机环境
+								<a href="#-%e6%8a%8a%e6%8e%a8%e7%90%86%e8%bd%ac%e5%8c%96%e4%b8%ba%e8%af%ad%e8%a8%80" class="nav--把推理转化为语言">
+									① 把推理转化为语言
 								</a>
 							</li>
 						
@@ -507,8 +631,8 @@
 						
 						
 							<li>
-								<a href="#%e5%bc%80%e5%90%af%e5%8f%8c%e7%bd%91%e5%8d%a1" class="nav-开启双网卡">
-									开启双网卡
+								<a href="#-%e6%8a%8a%e6%80%9d%e6%83%b3%e8%bd%ac%e5%8c%96%e4%b8%ba%e9%80%89%e6%8b%a9" class="nav--把思想转化为选择">
+									② 把思想转化为选择
 								</a>
 							</li>
 						
@@ -525,8 +649,58 @@
 						
 						
 							<li>
-								<a href="#%e6%9f%a5%e7%9c%8b%e8%99%9a%e6%8b%9f%e6%9c%ba%e7%9a%84%e6%9c%8d%e5%8a%a1%e5%99%a8%e5%9c%b0%e5%9d%80" class="nav-查看虚拟机的服务器地址">
-									查看虚拟机的服务器地址
+								<a href="#-%e9%87%8d%e5%a4%8d%e6%9a%b4%e9%9c%b2" class="nav--重复暴露">
+									③ 重复暴露
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e4%b8%89%e5%9b%9e%e5%88%b0%e4%bd%a0%e8%87%aa%e5%b7%b1" class="nav-三回到你自己">
+									三、回到你自己
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#1-%e4%bd%a0%e4%bd%93%e9%aa%8c%e8%bf%87%e6%80%9d%e6%83%b3%e6%b6%88%e6%95%a3%e7%9a%84%e6%8c%ab%e8%b4%a5" class="nav-1-你体验过思想消散的挫败">
+									1️⃣ 你体验过“思想消散”的挫败
 								</a>
 							</li>
 						
@@ -543,8 +717,86 @@
 						
 						
 							<li>
-								<a href="#%e8%ae%be%e7%bd%ae%e5%9b%ba%e5%ae%9aip" class="nav-设置固定ip">
-									设置固定IP
+								<a href="#2-%e4%bd%a0%e5%9c%a8%e6%80%9d%e8%80%83%e7%90%86%e6%80%a7%e7%9a%84%e6%9e%81%e9%99%90" class="nav-2-你在思考理性的极限">
+									2️⃣ 你在思考“理性的极限”
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#3-%e4%bd%a0%e5%bc%80%e5%a7%8b%e8%bf%9b%e5%85%a5%e6%9b%b4%e9%ab%98%e5%b1%82%e6%ac%a1%e7%9a%84%e6%80%9d%e8%80%83" class="nav-3-你开始进入更高层次的思考">
+									3️⃣ 你开始进入更高层次的思考
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#%e7%ac%acx%e7%ab%a0" class="nav-第x章">
+									第X章
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#reference" class="nav-reference">
+									Reference
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#remark" class="nav-remark">
+									remark
 								</a>
 							</li>
 						
