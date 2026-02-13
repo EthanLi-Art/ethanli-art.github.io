@@ -3,8 +3,8 @@ title: 'Data Structures and Algorithms Learning Notes'
 date: '2025-12-17T15:07:31-05:00'
 description: "Data Structures and Algorithms Learning Notes"
 featured_image: https://github.com/EthanLi-Art/picx-images-hosting/raw/master/site/image.3uvatf0uui.webp
-categories: algorithms
-tags: [algorithms, data-structures]
+categories: Algorithms
+tags: [Algorithms, Data-Structures]
 comment: true
 hidden: false
 draft : false
