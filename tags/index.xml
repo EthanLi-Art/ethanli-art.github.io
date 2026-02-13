@@ -38,24 +38,24 @@
       <description></description>
     </item>
     <item>
-      <title>Go</title>
-      <link>http://localhost:1313/tags/go/</link>
-      <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
-      <guid>http://localhost:1313/tags/go/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Algorithms</title>
       <link>http://localhost:1313/tags/algorithms/</link>
-      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+      <pubDate>Sun, 18 Jan 2026 15:50:59 -0500</pubDate>
       <guid>http://localhost:1313/tags/algorithms/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Structures</title>
       <link>http://localhost:1313/tags/data-structures/</link>
-      <pubDate>Wed, 17 Dec 2025 15:07:31 -0500</pubDate>
+      <pubDate>Sun, 18 Jan 2026 15:50:59 -0500</pubDate>
       <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Go</title>
+      <link>http://localhost:1313/tags/go/</link>
+      <pubDate>Tue, 06 Jan 2026 17:03:35 -0500</pubDate>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
