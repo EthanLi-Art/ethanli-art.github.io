@@ -1,3 +1,5 @@
+disableKinds = ["RSS"]
+
 baseURL = "https://ethanli-art.github.io/"
 languageCode = "en-us"
 title = "Ethan's Site"
@@ -13,6 +15,10 @@ theme = "diary"
   changefreq = "always"
   filename = "sitemap.xml"
   priority = 0.5
+
+[author]
+  name = "Ethan Li"
+  email = "ethanli.engineer@gmail.com"
 
 # Google Analytics
 [services]

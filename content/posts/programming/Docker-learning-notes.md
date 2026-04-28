@@ -40,8 +40,8 @@ draft : true
 ## 为什么容器技术会出现？
 
 - Linux Container容器技术的诞生于2008年（Docker诞生于2013年），解决了IT世界里“集装箱运输”的问题。Linux Container（简称LXC）它是一种内核轻量级的操作系统层虚拟化技术。Linux Container主要由Namespace和Cgroups 两大机制来保证实现
-  - Namespace主要用于资源的隔离（诞生于2002年）
-  - Cgroups(Control Groups)就负责资源管理控制作用，比如进程组使用CPU/MEM的限制，进程组的优先级控制，进程组的挂起和恢复等等
+  - Namespace：主要用于资源的隔离（诞生于2002年）
+  - Cgroups(Control Groups)：负责资源管理控制作用，比如进程组使用CPU/MEM的限制，进程组的优先级控制，进程组的挂起和恢复等等
 
 <br/>
 
@@ -85,6 +85,8 @@ draft : true
 # Docker 快速上手
 
 ## 安装 Docker
+
+- Docker有Desktop和Server版本
 
 ```shell
 # linux 安装docker
